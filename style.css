@@ -1479,9 +1479,9 @@ body {
 
 /* Tablet landscape: 2 columns */
 @media (max-width: 1024px) {
-  body {
+  /* body {
     padding: 2px 12px;
-  }
+  } */
 
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1814,8 +1814,7 @@ body {
     height: 180px;
   }
 }
-@media (max-width: 767px) {
-}
+
 .cards:hover .card-1 {
   transform: rotate(0deg) translateX(-40px) scale(1.05);
   z-index: 1;
@@ -1835,12 +1834,6 @@ body {
 .cards:hover .card-5 {
   transform: rotate(0deg) translateX(40px) scale(1.05);
   z-index: 5;
-}
-
-@media (max-width: 767px) {
-  .ac-card {
-    width: 85% !important;
-  }
 }
 
 @media (max-width: 767px) {
@@ -2012,6 +2005,12 @@ body {
     line-height: 17px;
   }
 
+  .view_all {
+    font-size: 14px;
+    font-weight: 400;
+    
+  }
+
   /* sku */
   .sku {
     font-size: 10px;
@@ -2110,7 +2109,7 @@ body {
     max-width: 100%; /* slightly bigger */
     margin: auto;
     display: block;
-    border-radius: 16px;
+    border-radius: 8px;
   }
 
   /* stack properly */

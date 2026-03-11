@@ -330,7 +330,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   padding: 8px 20px;
-  background-image: url("../public/offer.png");
+  background-image: url("public/offer.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2002,8 +2002,8 @@ body {
   }
 
   .my-account img {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+        height: auto;
   }
 
   /* header spacing */
@@ -2068,7 +2068,7 @@ body {
 ========================= */
 
   .bottom-strip {
-    padding: 12px 0;
+    padding: 5px 0;
     margin-left: -12px;
     margin-right: -12px;
     width: calc(100% + 24px);
@@ -2083,7 +2083,7 @@ body {
   .strip-item {
     min-width: 220px;
     scroll-snap-align: start;
-    padding: 6px 16px;
+    padding: 6px 6px 6px 16px;border-bottom: 0px;
   }
 
   .strip-icon img {
@@ -2092,7 +2092,7 @@ body {
   }
 
   .strip-title {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .strip-desc {
@@ -2140,9 +2140,10 @@ body {
   }
 
   .view_all {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
   }
+  .deals-line{display: none;}
 
   /* sku */
   .sku {

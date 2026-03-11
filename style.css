@@ -564,8 +564,7 @@ body {
   color: #0f1125;
   line-height: 24px;
 }
-.hover_cards .product-card img {
-}
+
 .blog_img {
   border-radius: 15px;
 }
@@ -1880,6 +1879,18 @@ body {
 .footer-main{padding: 0px !important;}
 .social-icons a{width: 28px; height: 28px;}
 .social-icons a img {width: 17px;}
+
+.testimonial-card p {
+    font-size: 12px;
+}
+
+.padding_box h5 {
+    font-size: 18px;
+}
+
+
+
+
   /* =========================
    TOP HEADER
 ========================= */

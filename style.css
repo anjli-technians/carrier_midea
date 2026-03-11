@@ -1850,6 +1850,36 @@ body {
 }
 
 @media (max-width: 767px) {
+  .footer{padding: 30px 20px 0px;background: url("public/footer-mobile.png");background-size: cover;background-repeat: no-repeat;}
+  .border_footer{border-bottom: 1px solid #FFFFFF78; padding: 20px 0 40px;}
+  .border_footer_social{border-bottom: 1px solid #FFFFFF78; padding: 0px 0 40px;}
+  .footer-bottom{justify-content: center;}
+  .footer-bottom-links a, .footer-copyright{font-size: 9px;}
+  .blog-meta .icon_bg{height: 25px; width: 25px;}
+  .blog-meta div{    gap: 1px;}
+  .blog-meta .icon {width: 9px;}
+  .social-label{margin-top: 25px;}
+  .help-section .card{padding: 15px;}
+  .plus-circle, .card-icon, .card-icon, .card-icon{    width: 35px;
+    height: 35px;}
+    .card-desc{font-size: 12px;}
+    .arrow-btn {
+    width: 35px;
+    height: 35px;}
+.plus-circle{    position: relative;
+    right: 10px;}
+.get-support-btn{padding: 7px 15px;font-size: 11px; font-weight: 500;}
+.get-support-btn img {
+    height: 24px;
+}
+.help-header h2{font-size: 17px;}
+.help-header p {font-size: 11px;}
+.get-support-btn{width: 190px;}
+.footer-main .accordion-button{padding: 15px 0px; border-bottom: 1px solid #FFFFFF78;font-size: 15px;
+        font-weight: 400;}
+.footer-main{padding: 0px !important;}
+.social-icons a{width: 28px; height: 28px;}
+.social-icons a img {width: 17px;}
   /* =========================
    TOP HEADER
 ========================= */
@@ -2093,11 +2123,7 @@ body {
   .video_tab_swiper {
     margin-top: -60px;
   }
-
-  /* slider width */
-  .slider_section_width {
-    width: 100% !important;
-  }
+ 
 
   /* room icons */
   .room-size-row {

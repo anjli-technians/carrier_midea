@@ -1852,6 +1852,9 @@ body {
 }
 
 @media (max-width: 767px) {
+  .padding_box {
+    padding: 10px;
+}
   .footer {
     padding: 30px 20px 0px;
     background: url("public/footer-mobile.png");
@@ -1904,16 +1907,15 @@ body {
     height: 35px;
   }
   .plus-circle {
-    position: relative;
-    right: 10px;
+    position: relative; 
   }
   .get-support-btn {
     padding: 7px 15px;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
   }
   .get-support-btn img {
-    height: 24px;
+    height: 20px;
   }
   .help-header h2 {
     font-size: 17px;
@@ -1922,7 +1924,8 @@ body {
     font-size: 11px;
   }
   .get-support-btn {
-    width: 190px;
+    width: 180px;align-items: center;
+        justify-content: center;
   }
   .footer-main .accordion-button {
     padding: 15px 0px;
@@ -1942,16 +1945,26 @@ body {
   }
 
   .testimonial-card p {
-    font-size: 12px;
+    font-size: 11px;line-height: 17px;
   }
+  .stars{font-size:16px}
+  .testimonial-header{margin-bottom:10px !important}
+  .user_name{font-size: 14px;}
+  .users_designation{font-size: 10px;}
 
   .user_info h5 {
-    font-size: 14px;
+    font-size: 12px !important;
   }
+  .user_info span{font-size: 10px;}
+  .icon_wrap{font-size: 10px;}
+  .blog-small p{font-size: 13px;}
 
   .padding_box h5 {
-    font-size: 16px;
+    font-size: 15px;
   }
+  .badge{font-size: 10px !important;}
+  .padding_box p{font-size: 11px;}
+  
   .blog-meta {
     display: flex;
     gap: 9px;

@@ -538,8 +538,10 @@ body {
   background: white;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+ box-shadow: 0px 4px 15px 0px #00000040;
+
 }
+.testimonial {padding: 30px 0px !important;}
 
 .testimonial-header {
   display: flex;
@@ -953,14 +955,14 @@ body {
   margin: auto;
 }
 .brand-box {
-  padding: 130px 70px !important;
+  padding: 70px 90px !important;
 }
 
 /* text */
 
 .brand-text {
   position: absolute;
-  bottom: 90px;
+  bottom: 35px;
   left: 0;
   right: 0;
   font-weight: 400;

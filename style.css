@@ -1035,6 +1035,10 @@ body {
   border-bottom: none;
 }
 
+.custom-img {
+  object-fit: cover;
+}
+
 /* ══════════════════════════════
      RESPONSIVE BREAKPOINTS
   ══════════════════════════════ */
@@ -1503,6 +1507,15 @@ body {
 
   .card-title {
     font-size: 18px;
+  }
+  .accordion-button {
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .accordion-button::after {
+    filter: invert(1);
   }
 }
 
@@ -2249,19 +2262,11 @@ body {
     padding-right: 0;
   }
 
-  .video_tab_swiper {
-    margin-top: 0 !important; /* removes overlap */
-  }
-
-  .video-section {
-    height: auto; /* optional – better for mobile */
-  }
-
-  .content-area {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+.content-area{
+  max-width:100%;
+  padding-left:0;
+  padding-right:0;
+}
 
   /* if inside bootstrap container */
   .container,

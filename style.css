@@ -1924,7 +1924,9 @@ body {
     padding: 10px 14px;
     font-size: 0;
   }
-
+  .nav-inner {
+    display: none !important;
+  }
   .nav-cart img {
     width: 20px;
   }
@@ -1938,10 +1940,13 @@ body {
   }
 
   .hero-banner {
-    background-image: url("/public/responsive.png");
+    background-image: url("public/responsive.png");
     background-size: cover;
     background-position: center;
     height: 420px;
+    margin-left: -12px;
+    margin-right: -12px;
+    width: calc(100% + 24px);
   }
 
   /* =========================
@@ -1950,6 +1955,9 @@ body {
 
   .bottom-strip {
     padding: 12px 0;
+    margin-left: -12px;
+    margin-right: -12px;
+    width: calc(100% + 24px);
   }
 
   .strip-row {
@@ -2106,9 +2114,13 @@ body {
     width: 20px;
   }
 
+  .ac-banner-section {
+    padding: 0 !important;
+  }
+
   .ac-banner-img {
-    width: 100%;
-    max-width: 95%; /* slightly bigger */
+    width: 106%;
+    max-width: 100%; /* slightly bigger */
     margin: auto;
     display: block;
     border-radius: 16px;
@@ -2144,9 +2156,9 @@ body {
     margin-bottom: 0;
   }
   /* header */
-  .explore_by_room_size .deals-header {
+  /* .explore_by_room_size .deals-header {
     padding: 0 12px;
-  }
+  } */
 
   /* nav pills slider */
   .explore_by_room_size .room-size-row .nav {
@@ -2251,11 +2263,11 @@ body {
     padding-right: 0;
   }
 
-  .content-area {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+.content-area{
+  max-width:100%;
+  padding-left:0;
+  padding-right:0;
+}
 
   /* if inside bootstrap container */
   .container,

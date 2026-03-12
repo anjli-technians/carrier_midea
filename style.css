@@ -23,6 +23,7 @@ body {
   height: 54px;
   object-fit: contain;
 }
+.logo-section .menu{display: none;}
 
 .logo-divider {
   width: 1px;

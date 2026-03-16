@@ -26,8 +26,12 @@
                 <div class="logo_search_flex">
                     <!-- Logos -->
                     <div class="logo-section">
-                        <img src="public/menu.png" alt="img" class="img-fluid menu">
-                        <img src="public/logo.png" alt="Carrier">
+                        <!-- <img src="public/menu.png" alt="img" class="img-fluid menu"> -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                             <img src="public/menu.png" alt="img" class="img-fluid menu">
+                        </button>
+                        <a href="#"><img src="public/logo.png" alt="Carrier"></a>
 
 
                     </div>
@@ -48,24 +52,24 @@
                 </div>
 
                 <!-- My Account -->
-                <div class="my-account d-none d-lg-flex">
+                <a href="#" class="my-account d-none d-lg-flex">
                     <span>My Account</span>
                     <img src="public/user.png" alt="account">
-                </div>
+                </a>
                 <ul class="user_details">
                     <li>
                         <div class="search">
-                            <img src="public/search_icon.png" alt="img" class="img-fluid">
+                            <a href="#"><img src="public/search_icon.png" alt="img" class="img-fluid"></a>
                         </div>
                     </li>
                     <li>
                         <div class="account">
-                            <img src="public/user_login.png" alt="img" class="img-fluid">
+                            <a href="#"><img src="public/user_login.png" alt="img" class="img-fluid"></a>
                         </div>
                     </li>
                     <li>
                         <div class="cart">
-                            <img src="public/cart_icon.png" alt="img" class="img-fluid">
+                            <a href="#"><img src="public/cart_icon.png" alt="img" class="img-fluid"></a>
                         </div>
                     </li>
                 </ul>
@@ -75,19 +79,64 @@
     </div>
 
     <!--MAIN NAV-->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container"> 
+            <!--  -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Carrier Air Conditioners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Midea Air Conditioners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Camipro Stabilizer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li> 
+                </ul>
+                <div class="d-none d-lg-flex ms-auto">
+                    <div class="nav-cart">
+                        My Cart
+                        <!-- <div class="cart-badge">0</div> -->
 
-    <div class="main-nav">
+                        <img src="public/cart.png" alt="cart">
+                    </div>
+                    <div class="nav-wishlist">
+
+                        My Wishlist
+                        <img src="public/wishlist_m.png" alt="wishlist">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="main-nav">
         <div class="container px-0">
             <div class="col-lg-12">
                 <div class="nav-inner">
 
                     <!-- Hamburger (mobile only) -->
-                    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <!-- <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
                         <span></span><span></span><span></span>
                     </button>
 
                     <!-- Desktop links -->
-                    <div class="desktop-nav-links d-flex align-items-stretch">
+                     <!--<div class="desktop-nav-links d-flex align-items-stretch">
                         <a class="nav-link-item">Carrier Air Conditioners</a>
                         <a class="nav-link-item">Midea Air Conditioners</a>
                         <a class="nav-link-item">Camipro Stabilizer</a>
@@ -98,12 +147,12 @@
                     </div>
 
                     <!-- Cart + Wishlist always visible -->
-                    <div class="d-flex ms-auto">
+                  <!--   <div class="d-flex ms-auto">
                         <div class="nav-cart">
                             My Cart
                             <!-- <div class="cart-badge">0</div> -->
 
-                            <img src="public/cart.png" alt="cart">
+                         <!--    <img src="public/cart.png" alt="cart">
                         </div>
                         <div class="nav-wishlist">
 
@@ -115,7 +164,7 @@
                 </div>
 
                 <!-- Mobile dropdown menu -->
-                <div class="mobile-menu" id="mobileMenu">
+                 <!--<div class="mobile-menu" id="mobileMenu">
                     <a href="#">Carrier Air Conditioners</a>
                     <a href="#">Midea Air Conditioners</a>
                     <a href="#">Camipro Stabilizer</a>
@@ -126,7 +175,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!--HERO BANNER -->
 
@@ -222,9 +271,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -235,7 +284,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -258,9 +307,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -271,7 +320,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -294,9 +343,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -307,7 +356,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -329,9 +378,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -342,7 +391,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -364,9 +413,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -377,7 +426,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -399,9 +448,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -412,7 +461,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -434,9 +483,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -447,7 +496,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -469,9 +518,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -482,7 +531,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -526,9 +575,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -539,7 +588,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -562,9 +611,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -575,7 +624,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -598,9 +647,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -611,7 +660,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -633,9 +682,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -646,7 +695,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -668,9 +717,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -681,7 +730,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -703,9 +752,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -716,7 +765,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -738,9 +787,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -751,7 +800,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -773,9 +822,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -786,7 +835,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -830,9 +879,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -843,7 +892,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -866,9 +915,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -879,7 +928,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -902,9 +951,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -915,7 +964,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -937,9 +986,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -950,7 +999,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -972,9 +1021,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -985,7 +1034,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1007,9 +1056,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1020,7 +1069,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1042,9 +1091,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1055,7 +1104,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1077,9 +1126,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1090,7 +1139,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1148,9 +1197,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1161,7 +1210,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1184,9 +1233,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1197,7 +1246,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1220,9 +1269,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1233,7 +1282,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1255,9 +1304,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1268,7 +1317,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1290,9 +1339,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1303,7 +1352,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1325,9 +1374,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1338,7 +1387,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1360,9 +1409,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1373,7 +1422,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1395,9 +1444,9 @@
                                     <div class="img-box">
                                         <img src="public/ac.png" class="product-img">
                                     </div>
-                                    <div class="title">
+                                    <a href="#" class="title">
                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                    </div>
+                                    </a>
                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                     <div class="d-flex align-items-center mb-2">
                                         <div class="price">₹ 30,500</div>
@@ -1408,7 +1457,7 @@
                                     <div class="info">10% Cashback Up To INR 3000*</div>
                                     <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                 </div>
-                                <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                             </div>
                         </div>
@@ -1493,9 +1542,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1531,9 +1580,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1569,9 +1618,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1606,9 +1655,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1643,9 +1692,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1680,9 +1729,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1717,9 +1766,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1754,9 +1803,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1801,9 +1850,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1839,9 +1888,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1877,9 +1926,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1914,9 +1963,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1951,9 +2000,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -1988,9 +2037,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2025,9 +2074,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2061,9 +2110,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2109,9 +2158,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2147,9 +2196,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2185,9 +2234,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2222,9 +2271,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2259,9 +2308,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2296,9 +2345,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2333,9 +2382,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2418,9 +2467,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2456,9 +2505,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2494,9 +2543,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2531,9 +2580,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2568,9 +2617,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2605,9 +2654,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2642,9 +2691,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2679,9 +2728,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2726,9 +2775,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2764,9 +2813,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2802,9 +2851,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2839,9 +2888,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2876,9 +2925,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2913,9 +2962,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2950,9 +2999,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -2987,9 +3036,9 @@
                                                     <div class="img-box">
                                                         <img src="public/ac.png" class="product-img">
                                                     </div>
-                                                    <div class="title">
+                                                    <a href="#" class="title">
                                                         SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                                    </div>
+                                                    </a>
                                                     <div class="sku">SKU# : MAII2SD3R35FO</div>
                                                     <div class="d-flex align-items-center mb-2">
                                                         <div class="price">₹ 30,500</div>
@@ -3128,9 +3177,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3141,7 +3190,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3165,9 +3214,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3178,7 +3227,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3202,9 +3251,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3215,7 +3264,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3238,9 +3287,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3251,7 +3300,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3274,9 +3323,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3287,7 +3336,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3310,9 +3359,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3323,7 +3372,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3346,9 +3395,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3359,7 +3408,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3382,9 +3431,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3395,7 +3444,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3435,9 +3484,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3448,7 +3497,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3472,9 +3521,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3485,7 +3534,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3509,9 +3558,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3522,7 +3571,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3545,9 +3594,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3558,7 +3607,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3581,9 +3630,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3594,7 +3643,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3617,9 +3666,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3630,7 +3679,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3653,9 +3702,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3666,7 +3715,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3689,9 +3738,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3702,7 +3751,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3742,9 +3791,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3755,7 +3804,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3779,9 +3828,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3792,7 +3841,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3816,9 +3865,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3829,7 +3878,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3852,9 +3901,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3865,7 +3914,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3888,9 +3937,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3901,7 +3950,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3924,9 +3973,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3937,7 +3986,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3960,9 +4009,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -3973,7 +4022,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -3996,9 +4045,9 @@
                                         <div class="img-box">
                                             <img src="public/ac.png" class="product-img">
                                         </div>
-                                        <div class="title">
+                                        <a href="#" class="title">
                                             SANTIS NEO DLX | Ton 3 Star Split Inverter AC
-                                        </div>
+                                        </a>
                                         <div class="sku">SKU# : MAII2SD3R35FO</div>
                                         <div class="d-flex align-items-center mb-2">
                                             <div class="price">₹ 30,500</div>
@@ -4009,7 +4058,7 @@
                                         <div class="info">10% Cashback Up To INR 3000*</div>
                                         <div class="info">Offer: Company Installation @ INR 1200+GST</div>
                                     </div>
-                                    <button class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</button>
+                                    <a href="#" class="btn buy-btn"><img src="public/cart1.png" alt=""> BUY NOW</a>
 
                                 </div>
                             </div>
@@ -4393,7 +4442,7 @@
 
                             <div class="padding_box">
                                 <span class="badge">Tech</span>
-                                <h5 class="mt-2">50 life changing motivational quotes for entrepreneurs</h5>
+                                <h5 class="mt-2"><a href="#">50 life changing motivational quotes for entrepreneurs</a></h5>
 
                                 <p>An UI/UX case study of an emerging local bicycle brand</p>
 
@@ -4442,9 +4491,9 @@
                         <div class="flex-grow-1 col-md-8">
                             <span class="badge">Tech</span>
 
-                            <p>
+                            <a>
                                 Start a blog to reach your creative peak
-                            </p>
+                            </a>
                             <div class="d-flex align-items-center gap-2 mb-3">
                                 <img src="public/ac7.png" class="rounded-circle" />
                                 <div class="user_info">
@@ -4482,9 +4531,9 @@
                         <div class="flex-grow-1 col-md-8">
                             <span class="badge">Tech</span>
 
-                            <p>
+                            <a>
                                 Start a blog to reach your creative peak
-                            </p>
+                            </a>
                             <div class="d-flex align-items-center gap-2 mb-3">
                                 <img src="public/ac6.png" class="rounded-circle" />
                                 <div class="user_info">
@@ -4522,9 +4571,9 @@
                         <div class="flex-grow-1 col-md-8">
                             <span class="badge">Tech</span>
 
-                            <p>
+                            <a>
                                 Start a blog to reach your creative peak
-                            </p>
+                            </a>
                             <div class="d-flex align-items-center gap-2 mb-3">
                                 <img src="public/ac5.png" class="rounded-circle" />
                                 <div class="user_info">

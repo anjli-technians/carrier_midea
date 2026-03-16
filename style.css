@@ -29,7 +29,40 @@ body {
     text-align: center;
     padding: 4px;margin-bottom: 0;}
 .logo-section .menu{display: none;}
-
+.navbar{background: linear-gradient(90deg, #27A8E0 0%, #2D3691 100%);padding: 0 !important;}
+.navbar .nav-link{padding: 10px 16px !important;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s, color 0.15s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-link.active, .navbar .nav-link:hover{background: #f0f4ff; color: #1a56db !important;}
+.navbar .navbar-nav{height: -webkit-fill-available;}
+.navbar .navbar-nav li{height: 100%; display: flex;}
+.navbar-toggler {
+    padding: 0px !important;
+    font-size: 17.5px !important;
+    line-height: 0 !important;
+    color: rgba(0, 0, 0, 0.65) !important;
+    background-color: transparent !important;
+    border: 0px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 5.25px !important;
+    transition: box-shadow 0.15s ease-in-out !important
+}
+.navbar-toggler-icon{display: inline-block !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    vertical-align: middle !important;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 100% !important;}
 .logo-divider {
   width: 1px;
   height: 34px;
@@ -88,18 +121,18 @@ body {
 }
 
 .my-account {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   color: #000;
   display: flex;
   align-items: center;
   gap: 6px;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: nowrap;text-decoration: none;
 }
 
 .my-account img {
-  width: 9px;
+  width: 10px;
     height: auto;
     margin-left: 10px;
 }
@@ -367,7 +400,8 @@ body {
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 5px;color: #212529; 
+    text-decoration: none;
 }
 
 .sku {
@@ -671,7 +705,7 @@ body {
 }
 .blog-big {
   border: 1px solid #e5e7eb;
-  border-radius: 20px;
+  border-radius: 20px;height: 100%;
 }
 .badge {
   background-color: #d1fae5;
@@ -688,6 +722,7 @@ body {
   font-weight: 600;
   color: #111827;
 }
+.padding_box h5 a{color: #111827;text-decoration: none;}
 .padding_box p {
   font-size: 13px;
   font-weight: 400;
@@ -701,7 +736,7 @@ body {
 
 .help-section {
   margin: 0 auto;
-  padding: 0 0 60px;
+  padding: 60px 0 60px;
 }
 
 .help-header {
@@ -1796,6 +1831,7 @@ body {
   height: auto;
   object-fit: contain;
 }
+.blog-small:last-child{margin-bottom: 0px !important;}
 .blog-small .badge {
   background: #dbeafe;
   color: #1e40af;
@@ -1805,6 +1841,12 @@ body {
   font-weight: 600;
   color: #1f2937;
   margin-top: 12px;
+}
+.blog-small a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 12px;text-decoration: none;display: block;margin-bottom: 14px;
 }
 .blog-small img.rounded {
   width: 100%;
@@ -1979,7 +2021,7 @@ body {
   .testimonial {
     padding: 30px 0px 10px !important;
 }
-.help-section{padding-bottom: 30px;}
+.help-section{padding-bottom: 30px;padding-top: 30px;}
 #footerAccordion .accordion-body ul li{margin-bottom: 5px;}
 #footerAccordion .accordion-body{padding: 20px 0 0;}
 .app_icon img{width: 100px;
@@ -2462,7 +2504,7 @@ body {
   .deals-title{font-size: 18px;}
   .view_all {font-size: 13px;}
   .strip-title{font-size: 10px;}
-  .brand-text{font-size: 20px;bottom: 40px;}
+  .brand-text{font-size: 20px;bottom: 15px;}
   .room-size-row{margin-bottom: 10px;}
   .titles{font-size: 22px;}
   .description{font-size: 11px;}

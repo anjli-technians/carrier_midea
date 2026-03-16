@@ -9,7 +9,7 @@ body {
 .top-header {
   background: #fff;
   border-bottom: 2px solid #e0e0e0;
-  padding: 10px 24px;
+  padding: 10px 0px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1087,9 +1087,15 @@ body {
 /* ══════════════════════════════
      RESPONSIVE BREAKPOINTS
   ══════════════════════════════ */
-
+.navbar .row{width: 100%;}
 /* ── Tablet: ≤ 991px ── */
 @media (max-width: 991px) {
+  .navbar {position: absolute !important;top: 100px;left: 0;right: 0;}
+  .navbar .container{padding: 0px;}
+  .navbar .navbar-nav li{border-bottom: 1px solid #ffffff2e;}
+  .navbar .nav-link.active, .navbar .nav-link:hover{width: -webkit-fill-available;}
+  .navbar .navbar-nav{margin-bottom: 0px !important;}
+  .navbar .navbar-nav li:last-child{border-bottom: 0px;}
   .top-header {
     padding: 8px 12px 30px;
         position: relative;

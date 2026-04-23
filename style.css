@@ -1024,7 +1024,7 @@ body {
 }
 
 .testimonial-heading{margin-bottom: 20px;}
-.testimonial-heading h2{font-weight: 600;}
+.testimonial-heading h2{font-weight: 400; font-size: 16px; color: #000;}
 /* ══════════════════════════════
      HAMBURGER (mobile)
   ══════════════════════════════ */

@@ -325,7 +325,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
   width: 95%;
 }
@@ -750,7 +750,7 @@ body {
 }
 
 .help-header h2 {
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 600;
   color: #000;
   margin-bottom: 4px;
@@ -1914,8 +1914,32 @@ body {
   z-index: 5;
 }
 .user_details{display: none;}
+.explore_by_room_size .nav-link.active .room-item{color: #2A5FB0;}
+.explore_by_room_size .nav-link.active .room-item img{filter: invert(28%) sepia(77%) saturate(1095%) hue-rotate(193deg) brightness(90%) contrast(95%);}
+/* .explore_by_room_size .nav-link.active .room-item::after,.nav-pills .nav-link:hover::after{
+  content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    margin: auto;
+    background: #2a5fb0cc;
+    border-radius: 50%;
+} */ 
+/* .explore_category .nav-item .nav-link.active::after, .nav-underline .nav-link:hover::after */
+.nav-pills .nav-link { position: relative;   padding-bottom: 15px;  background-color: transparent !important;  color: #333; 
+}
+.nav-pills .nav-link::after { content: ''; position: absolute; bottom: 8px;  left: 50%; transform: translateX(-50%);   width: 6px;  height: 6px;  background-color: #2a5fb0cc;  border-radius: 50%;  opacity: 0;  transition: opacity 0.2s ease-in-out;  }
+.nav-pills .nav-link:hover::after,
+.nav-pills .nav-link.active::after { opacity: 1;}
+ 
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link.active {color: #2a5fb0cc !important; }
 
 @media (max-width: 767px) {
+  .nav-pills .nav-link::after{bottom: -5px;}
   .user_details{display: flex;list-style: none;padding-left: 0;gap: 15px;margin-bottom: 0px;}
   .user_details li img{width: 15px;height: auto;}
   .user_details li:nth-child(2) img{width: 11px;}
@@ -2067,12 +2091,12 @@ body {
   .location-btn {
     order: 5;
     width: 100%;
-    font-size: 8px;color:#7C7C7C;
+    font-size: 11px;color:#7C7C7C;
     margin-top: 6px;position: absolute;bottom: 0;left: 0;
         right: 0;
         background: #F2F2F2; padding: 3px 12px;top: auto;
   }.location-btn img {
-    width: 11px;
+    width: 13px;
     height: auto;
 }
 
@@ -2517,8 +2541,8 @@ body {
   .room-size-row{margin-bottom: 10px;}
   .titles{font-size: 22px;}
   .description{font-size: 11px;}
-  .testimonial-heading h2{font-size: 22px;}
-  .testimonial-heading{margin-bottom: 0px;}
+  .testimonial-heading h2{font-size: 12px;}
+  .testimonial-heading{margin-bottom: 0px; padding: 10px;}
   .testimonial {padding: 20px 0px !important;}
   .user_name {font-size: 13px;}
   .users_designation{font-size: 10px;}

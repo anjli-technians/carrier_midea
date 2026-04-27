@@ -1990,15 +1990,15 @@ body {
   .card-icon,
   .card-icon,
   .card-icon {
-    width: 35px !important;
-    height: 35px !important;
+    width: 30px !important;
+    height: 30px !important;
   }
   .card-desc {
     font-size: 12px !important;
   }
   .arrow-btn {
-    width: 30px !important;
-    height: 30px !important;
+    width: 25px !important;
+    height: 25px !important;
   }
   .plus-circle {
     position: relative; 
@@ -2208,7 +2208,7 @@ body {
   }
 
   .strip-desc {
-    font-size: 9px;
+    font-size: 9px !important;
   }
 
   /* Product card */
@@ -2533,7 +2533,7 @@ body {
   .sku{font-size: 9px;}
   .price{font-size: 18px;}
   .old-price{font-size: 14px;}
-  .inclusive_tax, .strip-desc{font-size: 8px !important;}
+  .inclusive_tax, .strip-desc{font-size: 9px !important;}
   .info {font-size: 9px; margin-bottom: 7px;}
   .buy-btn img{width: 13px;}
   .buy-btn{font-size: 11px !important;}
@@ -2544,7 +2544,7 @@ body {
   .room-size-row{margin-bottom: 10px;}
   .titles{font-size: 22px;}
   .description{font-size: 11px;}
-  .testimonial-heading h2{font-size: 12px;}
+  .testimonial-heading h2{font-size: 12px; line-height: 18px;}
   .testimonial-heading{margin-bottom: 0px; padding: 10px;}
   .testimonial {padding: 20px 0px !important;}
   .user_name {font-size: 13px;}

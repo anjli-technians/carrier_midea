@@ -669,9 +669,9 @@
     <style>
         .cookies_bar{position: sticky; bottom: 0px; background-color:#E3E3E3; z-index: 99999; text-align: center; padding: 15px 0;}
         .cookies_bar p{color: #000; font-size: 12px; text-align: center; font-weight: 400; padding-bottom: 10px; max-width: 90%; margin: auto;}
-        .cookies_bar a{background-color: #2A5FB0; color: #fff; font-size: 13px; font-weight: 600; text-decoration: none; padding: 5px 10px; border-radius: 7px;}
+        .cookies_bar a, .cookies_bar button{background-color: #2A5FB0; color: #fff; font-size: 13px; font-weight: 600; text-decoration: none; padding: 5px 10px; border-radius: 7px;border: 0px;}
         @media (max-width:767px){
-            .cookies_bar p{font-size: 12px;}
+            .cookies_bar p{font-size: 11px;}
             .cookies_bar{padding: 10px 0;}
             .cookies_bar a{font-size: 11px;}
         }
@@ -679,7 +679,7 @@
 
     <div class="cookies_bar" id="cookieBanner">
         <p>We value your privacy and your trust is important to us. We use cookies to enhance your website experience. By clicking "Accept all cookies", you allow us to store cookies on your device and disclose information in accordance with our Privacy</p>
-        <a href="/" id="acceptCookiesBtn">Accept All Cookies</a>
+        <button id="acceptCookiesBtn">Accept All Cookies</button>
     </div>
 
 

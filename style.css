@@ -2539,7 +2539,7 @@ body {
   .buy-btn img{width: 13px;}
   .buy-btn{font-size: 11px !important;}
   .deals-title{font-size: 18px;}
-  .view_all {font-size: 13px;}
+  .view_all {font-size: 11px;}
   .strip-title{font-size: 10px;}
   .brand-text{font-size: 20px;bottom: 15px;}
   .room-size-row{margin-bottom: 10px;}
@@ -4180,7 +4180,7 @@ body {
           .sticky-prod-header .add-text p{color: #4E4D4D; font-size: 12px;}
           .product-details .blue-offer-box{padding: 10px; display: flex; flex-direction: column; justify-content: space-evenly;}
           .product-details .product-title{font-size: 15px;}
-          .deals-title{font-size: 17px; color: #000;}
+          .deals-title{font-size: 16px; color: #000;}
           .card-title{font-size: 21px;}
           .product-details .pin-code input{width: 180px; padding: 3px 15px; font-size: 12px;}
           /* main.swiper-section{padding-top: 0px;} */

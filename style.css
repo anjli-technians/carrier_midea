@@ -1096,6 +1096,7 @@ body {
 .navbar .row{width: 100%;}
 /* ── Tablet: ≤ 991px ── */
 @media (max-width: 991px) {
+  .video-section{height: 400px;}
   .navbar {position: absolute !important;top: 100px;left: 0;right: 0;}
   .navbar .container{padding: 0px;}
   .navbar .navbar-nav li{border-bottom: 1px solid #ffffff2e;}
@@ -2521,6 +2522,9 @@ body {
     width: 85% !important;
   }
 }
+@media (min-width:991px) and (max-width:1200px){
+  .navbar .nav-link{font-size: 10px;}
+}
 @media (max-width: 1200px){
   .nav-link-item{padding: 7px;font-size: 11px;}
   .nav-cart, .nav-wishlist{font-size: 11px;}
@@ -3144,8 +3148,8 @@ body {
         }
 
         .feature-card h4 {
-            font-weight: 800;
-            font-size: 24px;
+            font-weight: 700;
+            font-size: 18px;
             color: #000000;
             margin-bottom: 12px;
             letter-spacing: -0.5px;
@@ -3218,10 +3222,10 @@ body {
         .faq-accordion .accordion-button {
             background-color: transparent;
             color: #000000;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 0.95rem;
-            padding: 15px 0;
-            box-shadow: none !important; /* Removes Bootstrap's blue focus ring */
+            padding: 5px 0;
+            box-shadow: none !important;  
         }
 
         /* Numbering style inside the button */
@@ -3309,19 +3313,21 @@ body {
         }
 
         .review-box-text {
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: 500;
+            font-size: 14px;
             color: #000;
         }
 
         .btn-write-review {
-            background-color: #2b60a3; /* Matches the blue text */
-            color: #ffffff;
-            font-weight: 600;
+            /* background-color: #2b60a3;  */
+            /* color: #ffffff; */
+            color: #000;
+            border: 1px solid #2A5FB0 !important  ;
+            font-weight: 500;
             border: none;
-            padding: 10px 25px;
+            padding: 6px 20px;
             border-radius: 12px;
-            font-size: 0.9rem;
+            font-size: 13px;
             transition: background-color 0.3s ease;
         }
 
@@ -4127,6 +4133,9 @@ body {
 
 /* ======================================================== */
 .container.swiper-section{padding-top: 20px; padding-bottom: 20px;}
+.tab-section{padding-top: 30px ;}
+.dal-faq{width: 100%;}
+.review-dal{width: 100%;}
 
         /* Responsive Adjustments */
         @media (max-width: 991px) {
@@ -4140,6 +4149,8 @@ body {
         }
         
         @media (max-width:767px){ 
+          .product-details .gold-warranty-box{margin-bottom: 20px;}
+          .line-bar{border-bottom: 1px solid #ccc;}
           .features-card-section{padding-top: 0 !important;}
           .tab-section .custom-tab-content p{line-height: 19px; font-size: 11px;}
           .faq-number{font-size: 14px;}

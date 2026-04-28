@@ -2934,20 +2934,20 @@ body {
 
         .product-details .blue-offer-box .bank-offer::after {content: "";display: block;width: 45px; height: 1px; background-color: #fff; margin-top: 5px;}
 
-        .product-details .blue-offer-box p {font-size: 10px; margin-bottom: 20px; font-weight: 400;}
-        .product-details .blue-offer-box a {font-size: 10px;  color: #fff; text-decoration: none;}
+        .product-details .blue-offer-box p {font-size: 9px; margin-bottom: 20px; font-weight: 300;}
+        .product-details .blue-offer-box a {font-size: 9px; font-weight: 300;  color: #fff; text-decoration: none;}
         .btn-check-avail { background-color: #2b60a3; color: white;} 
         .sticky-left-col { position: -webkit-sticky;   position: sticky;  top: 20px;   align-self: flex-start;   overflow-y: auto; padding-bottom: 20px; padding-top: 10px;}
 
     /* Container for the features section */
 .product-details .features-card { background-color: #EEEEEE;  border-radius: 10px; padding: 24px 30px;  margin-bottom: 20px;}
 /* Heading style */
-.product-details .features-card .features-title { color: #000; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px;}
+.product-details .features-card .features-title { color: #000; font-size: 19px; font-weight: 600; margin-top: 0; margin-bottom: 12px;}
 /* List styling */
 .product-details .features-card .features-list { margin: 0 0 24px 0; padding-left: 18px; }
-.product-details .features-card .features-list li { color: #383838;  font-size: 13px; line-height: 1.6;}
+.product-details .features-card .features-list li { color: #383838;  font-size: 12px; line-height: 20px;}
 /* Outlined Button styling */
-.product-details .features-card .read-more-btn { background-color: transparent;  border: 1px solid #2A5FB0;   color: #030303;  padding: 6px 16px;  border-radius: 8px;  font-size: 11px;  font-weight: 500;  cursor: pointer;  transition: background-color 0.2s ease, color 0.2s ease;}
+.product-details .features-card .read-more-btn { background-color: transparent;  border: 1px solid #2A5FB0;   color: #030303;  padding: 5px 16px;  border-radius: 12px;  font-size: 10px;  font-weight: 500;  cursor: pointer;  transition: background-color 0.2s ease, color 0.2s ease;}
  
     
     
@@ -3069,8 +3069,8 @@ body {
         /* Active Tab Styling */
         .tab-section .custom-tabs .nav-link.active {  background-color: #2A5FB0;   color: #ffffff; font-weight: 600;}
         /* Content Area Styling */
-        .tab-section .custom-tab-content {  padding: 20px 40px;  text-align: center; }
-        .tab-section .custom-tab-content p {  color: #555555; font-size: 12px; line-height: 1.8; margin: 0; max-width: 1200px; margin: 0 auto; }
+        .tab-section .custom-tab-content {  padding: 30px 40px;  text-align: center; padding-bottom: 70px; }
+        .tab-section .custom-tab-content p {  color: #555555; font-size: 12px; line-height: 18px; margin: 0; max-width: 1200px; margin: 0 auto;  text-align: left;}
 
 
 /* ============================= Video section css ===================================================== */
@@ -3224,8 +3224,8 @@ body {
         .faq-accordion .accordion-button {
             background-color: transparent;
             color: #000000;
-            font-weight: 500;
-            font-size: 0.95rem;
+            font-weight: 600;
+            font-size: 12px;
             padding: 5px 0;
             box-shadow: none !important;  
         }
@@ -3234,7 +3234,7 @@ body {
         .faq-number {
             font-weight: 600;
             margin-right: 25px;
-            font-size: 0.95rem;
+            font-size: 12px;
         }
 
         /* Hide the default Bootstrap accordion arrow */
@@ -3296,7 +3296,7 @@ body {
         .faq-accordion .accordion-body {
             padding: 0 0 15px 45px; /* Aligns text perfectly under the question, skipping the number */
             color: #666666;
-            font-size: 0.85rem;
+            font-size: 12px;
             line-height: 1.6;
         }
 
@@ -3316,7 +3316,7 @@ body {
 
         .review-box-text {
             font-weight: 500;
-            font-size: 14px;
+            font-size: 12px;
             color: #000;
         }
 
@@ -3329,7 +3329,7 @@ body {
             border: none;
             padding: 6px 20px;
             border-radius: 12px;
-            font-size: 13px;
+            font-size: 11px;
             transition: background-color 0.3s ease;
         }
 

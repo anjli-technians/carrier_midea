@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <style>
+        /* adderss book style start */
+        .address{border: 1px solid #D0D0D0;padding: 15px;border-radius: 5px;}
+        .address ul{display: flex; gap: 10px; margin-bottom: 10px;list-style: none;padding-left: 0;justify-content: space-between;}
+        .address ul li{font-weight: 600; font-size: 13px;}
+        .address ul li a{font-weight: 600; font-size: 12px;color: #2A5FB0;}
+        .address p{font-size: 12px; font-weight: 400; color: #000;}
+        .add_more{display: inline-block;margin-top: 10px;font-size: 15px;text-transform: uppercase;color: #2A5FB0;padding: 8px 50px;text-decoration: none;box-shadow: 0px 4.18px 4.18px 0px #0000001f;border: 1px solid #2A5FB0;border-radius: 5px;}
+        section{padding: 60px 0;}
+        .address_detail h3{font-size: 20px; font-weight: 700; color: #000; margin-bottom: 20px;}
+        .dashboard_list {background:#F6F6F6;}
+        .dashboard_list ul{list-style: none;padding: 10px;}
+        .dashboard_list ul li{border-bottom: 1px solid #DADADA;padding: 10px 30px 8px;font-size: 13px;}
+        .dashboard_list ul li:last-child{border-bottom: none;}
+        .dashboard_list ul li a{text-decoration: none;color: #000;}
+        .dashboard_list ul li a.active{font-weight: 700;color: #2A5FB0;}
+       .dashboard_list {
+    background: #F6F6F6;
+    position: relative;
+}
+
+/* Selected (visible bar like your image) */
+.dashboard_selected {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    font-size: 16px;
+    background: #EDEDED00;
+    cursor: pointer;
+}
+
+.dashboard_selected .arrow {
+    font-size: 18px;
+}
+/* Smooth rotation */
+.dashboard_selected .arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Rotate when open */
+.dashboard_list.open .arrow {
+    transform: rotate(90deg); /* right → down */
+}
+
+/* Menu */
+.dashboard_menu {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.dashboard_menu li {
+    border-bottom: 1px solid #DADADA;
+    padding: 10px 30px 8px;
+    font-size: 13px;
+}
+
+.dashboard_menu li:last-child {
+    border-bottom: none;
+}
+
+.dashboard_menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dashboard_menu a.active {
+    font-weight: 700;
+    color: #2A5FB0;
+}
+
+/* MOBILE BEHAVIOR */
+@media (max-width: 768px) {
+
+    .dashboard_selected {
+        display: flex;margin-bottom: 30px;
+    }
+    .dashboard_selected .selected_text{font-size: 15px; font-weight: 500;}
+    .dashboard_list{background: transparent;}
+
+    /* hide menu initially */
+    .dashboard_menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #F6F6F6;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .dashboard_list ul li{padding: 10px 10px 5px;}
+
+    .dashboard_list.open .dashboard_menu {
+        display: block;border: 1px solid #ddd;
+    }
+    .add_more{font-size: 14px; padding: 8px 40px;}
+
+    /* hide active item inside dropdown */
+    .dashboard_menu a.active {
+        display: none;
+    }
+    section{padding: 30px 0;}
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="top_nav">
+      <p class="d-none d-md-block mx-auto">Now delivering to more locations—check your Pincode and shop with ease!</p>
+        <marquee class="d-block d-md-none">  <p>Now delivering to more locations—check your Pincode and shop with ease!</p></marquee>
+    </div>
+    <div class="top-header">
+        <div class="container px-0">
+            <div class="d-flex align-items-center justify-content-between gap-2 gap-md-3">
+
+                <div class="logo_search_flex">
+                    <!-- Logos -->
+                    <div class="logo-section">
+                        <!-- <img src="public/menu.png" alt="img" class="img-fluid menu"> -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                             <img src="public/menu.png" alt="img" class="img-fluid menu">
+                        </button>
+                        <a href="#"><img src="public/logo.png" alt="Carrier"></a>
+
+
+                    </div>
+                    <div class="d-flex">
+                        <!-- Location -->
+                        <div class="location-btn">
+                            <img src="public/location.png" alt="location">
+                            Search your location ▾
+                        </div>
+
+
+                        <!-- Search -->
+                        <div class="search-wrap">
+                            <input type="text" placeholder="Search products...">
+                            <button><img src="public/search.png" alt="search"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Account -->
+                <a href="#" class="my-account d-none d-lg-flex">
+                    <span>My Account</span>
+                    <img src="public/user.png" alt="account">
+                </a>
+                <ul class="user_details">
+                    <li>
+                        <div class="search">
+                            <a href="#"><img src="public/search_icon.png" alt="img" class="img-fluid"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="account">
+                            <a href="#"><img src="public/user_login.png" alt="img" class="img-fluid"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart">
+                            <a href="#"><img src="public/cart_icon.png" alt="img" class="img-fluid"></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!--MAIN NAV-->
+    <nav class="navbar  navbar-expand-lg ">
+        <div class="container"> 
+            <!--  -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Carrier Air Conditioners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Midea Air Conditioners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Camipro Stabilizer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li> 
+                </ul>
+                <div class="d-none d-lg-flex ms-auto">
+                    <div class="nav-cart">
+                        My Cart
+                        <!-- <div class="cart-badge">0</div> -->
+
+                        <img src="public/cart.png" alt="cart">
+                    </div>
+                    <div class="nav-wishlist">
+
+                        My Wishlist
+                        <img src="public/wishlist_m.png" alt="wishlist">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav> 
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="dashboard_list">
+                        <div class="dashboard_selected">
+                            <span class="selected_text">Address Book</span>
+                            <span class="arrow">❯</span>
+                        </div>
+                        <ul class="dashboard_menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#" class="active">Address Book</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="address_detail">
+                        <h3>My Address</h3>
+                        <div class="row">
+                            <div class="col-md-6 p-2">
+                                <div class="address">
+                                    <ul>
+                                        <li>Home:</li>
+                                        <li><a href="#">Edit</a></li>
+                                    </ul>
+                                    <p>Mahtab Alam <br>
+                                    sector 47 | SECTOR-11, GURUGRAM <br>
+                                    Gurugram 122001 <br>
+                                    IN <br>
+                                    9898989898</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 p-2">
+                                <div class="address">
+                                    <ul>
+                                        <li>Office:</li>
+                                        <li><a href="#">Edit</a></li>
+                                    </ul>
+                                    <p>Rehan Alam <br>
+                                    sector 48 | SECTOR-12, GURUGRAM <br>
+                                    Gurugram 122008 <br>
+                                    IN <br>
+                                    9898989898</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="add_more">Add More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+           
+    <section class="help-section">
+        <div class="container">
+            <div class="row">
+                <div class="help-header d-flex flex-row justify-content-between align-items-center">
+                    <div>
+                        <h2>NEED HELP?</h2>
+                        <p>We're here to provide all the help you need.</p>
+                    </div>
+                    <button class="get-support-btn">
+                        <!-- Phone ring icon -->
+                        <img src="public/bx_bx-phone-call.png" alt="img" class="img-fluid">
+                        Get Support
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Product Registration -->
+                <div class="col-lg-3 col-md-6 col-6 p-1">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-title">Product<br />Registration</div>
+                            <div class="plus-circle">
+                                <img src="public/plus.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="card-desc">
+                            Registering your product will help you get faster support.
+                        </p>
+                        <button class="arrow-btn">
+                            <img src="public/rgt-arrow.png" alt="img" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Support -->
+                <div class="col-lg-3 col-md-6 col-6 p-1">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-title">Product<br />Support</div>
+                            <div class="card-icon">
+                                <img src="public/Artboard11.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="card-desc">
+                            Find manual, troubleshoot and warranty of your CMI product.
+                        </p>
+                        <button class="arrow-btn">
+                            <img src="public/rgt-arrow.png" alt="img" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Order Support -->
+                <div class="col-lg-3 col-md-6 col-6 p-1">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-title">Order<br />Support</div>
+                            <div class="card-icon">
+                                <img src="public/order.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="card-desc">Track your order and check order FAQ.</p>
+                        <button class="arrow-btn">
+                            <img src="public/rgt-arrow.png" alt="img" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Repair Request -->
+                <div class="col-lg-3 col-md-6 col-6 p-1">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-title">Repair<br />Request</div>
+                            <div class="card-icon">
+                                <img src="public/air-conditioner.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="card-desc">Request repair service conveniently online.</p>
+                        <button class="arrow-btn">
+                            <img src="public/rgt-arrow.png" alt="img" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-main container">
+
+            <!-- DESKTOP FOOTER (UNCHANGED) -->
+            <div class="row d-none d-md-flex">
+
+                <div class="col-md-8">
+
+                    <div class="row">
+
+                        <!-- COL 1 -->
+                        <div class="footer-col col-md-4">
+                            <h4>About Carrier Midea India</h4>
+
+                            <ul>
+                                <li><a href="#">Vision and Values</a></li>
+                                <li><a href="#">Chairman's Message</a></li>
+                                <li><a href="#">MD's Message</a></li>
+                                <li><a href="#">Code of Ethics and Conduct</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Corporate Video</a></li>
+                                <li><a href="#">Manufacturing</a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <!-- COL 2 -->
+                        <div class="footer-col col-md-4">
+
+                            <h4>Products</h4>
+
+                            <ul>
+                                <li><a href="#">Carrier Air Conditioner</a></li>
+                                <li><a href="#">Midea Air Conditioner</a></li>
+                                <li><a href="#">Light Commerical Air Conditioner</a></li>
+                                <li><a href="#">VRF Air Conditioner</a></li>
+                                <li><a href="#">VRF IDU</a></li>
+                                <li><a href="#">VRF Controllers</a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <!-- COL 3 -->
+                        <div class="footer-col col-md-4">
+
+                            <h4>Customer Support</h4>
+
+                            <ul>
+                                <li><a href="#">Customer Helpline</a></li>
+                                <li><a href="#">New to CMI</a></li>
+                                <li><a href="#">Annual Maintenance Contract</a></li>
+                                <li><a href="#">Camipro Spare Solutions</a></li>
+                                <li><a href="#">Service Request</a></li>
+                                <li><a href="#">Resources</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="social-label">Follow us now</div>
+
+                    <div class="social-icons">
+
+                        <a href="#"><img src="public/facebook.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/instagram.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/twitter.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/tik-tok.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/yt.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/telegram.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/whatsapp.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/linkedin.png" class="img-fluid"></a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="footer-col footer-right col-md-4">
+
+                    <img src="public/phones.png" alt="App Mockup" class="phone-img" />
+
+                    <div class="store-badges">
+
+                        <a href="#" class="store-badge">
+                            <img src="public/googleplay.png" class="img-fluid">
+                        </a>
+
+                        <a href="#" class="store-badge">
+                            <img src="public/appstore.png" class="img-fluid">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOBILE FOOTER -->
+            <div class="d-md-none">
+
+
+                <div class="accordion" id="footerAccordion">
+
+                    <!-- ABOUT -->
+                    <div class="accordion-item bg-transparent border-0">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed bg-transparent text-white"
+                                data-bs-toggle="collapse" data-bs-target="#aboutFooter">
+
+                                About Carrier Midea India
+
+                            </button>
+
+                        </h2>
+
+
+                        <div id="aboutFooter" class="accordion-collapse collapse">
+
+                            <div class="accordion-body">
+
+                                <ul class="list-unstyled">
+
+                                    <li><a href="#">Vision and Values</a></li>
+                                    <li><a href="#">Chairman's Message</a></li>
+                                    <li><a href="#">MD's Message</a></li>
+                                    <li><a href="#">Code of Ethics and Conduct</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Corporate Video</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCTS -->
+                    <div class="accordion-item bg-transparent border-0">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed bg-transparent text-white"
+                                data-bs-toggle="collapse" data-bs-target="#productsFooter">
+
+                                Products
+
+                            </button>
+
+                        </h2>
+
+
+                        <div id="productsFooter" class="accordion-collapse collapse">
+
+                            <div class="accordion-body">
+
+                                <ul class="list-unstyled">
+
+                                    <li><a href="#">Carrier Air Conditioner</a></li>
+                                    <li><a href="#">Midea Air Conditioner</a></li>
+                                    <li><a href="#">Light Commerical Air Conditioner</a></li>
+                                    <li><a href="#">VRF Air Conditioner</a></li>
+                                    <li><a href="#">VRF IDU</a></li>
+                                    <li><a href="#">VRF Controllers</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER SUPPORT -->
+                    <div class="accordion-item bg-transparent border-0">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed bg-transparent text-white"
+                                data-bs-toggle="collapse" data-bs-target="#supportFooter">
+
+                                Customer Support
+
+                            </button>
+
+                        </h2>
+
+
+                        <div id="supportFooter" class="accordion-collapse collapse">
+
+                            <div class="accordion-body">
+
+                                <ul class="list-unstyled">
+
+                                    <li><a href="#">Customer Helpline</a></li>
+                                    <li><a href="#">New to CMI</a></li>
+                                    <li><a href="#">Annual Maintenance Contract</a></li>
+                                    <li><a href="#">Camipro Spare Solutions</a></li>
+                                    <li><a href="#">Service Request</a></li>
+                                    <li><a href="#">Resources</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE IMAGE -->
+                <div class="text-center mt-4 border_footer">
+
+                    <img src="public/phones.png" class="img-fluid" style="max-width:220px;">
+
+                    <div class="d-flex justify-content-center gap-2 mt-3 app_icon">
+
+                        <img src="public/googleplay.png" height="40">
+                        <img src="public/appstore.png" height="40">
+
+                    </div>
+
+                </div>
+
+
+                <!-- SOCIAL ICONS -->
+                <div class="text-center mt-4 border_footer_social">
+
+                    <div class="social-label">Follow us now</div>
+
+                    <div class="social-icons justify-content-center">
+
+                        <a href="#"><img src="public/facebook.png"></a>
+                        <a href="#"><img src="public/instagram.png"></a>
+                        <a href="#"><img src="public/twitter.png"></a>
+                        <a href="#"><img src="public/tik-tok.png"></a>
+                        <a href="#"><img src="public/yt.png"></a>
+                        <a href="#"><img src="public/telegram.png"></a>
+                        <a href="#"><img src="public/whatsapp.png"></a>
+                        <a href="#"><img src="public/linkedin.png"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-links">
+
+                <a href="#">Our Policies</a>
+                <span>|</span>
+
+                <a href="#">Disclaimer</a>
+                <span>|</span>
+
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+
+                <a href="#">Site Map</a>
+
+            </div>
+
+            <div class="footer-copyright">
+                2025 © Carrier Midea India
+            </div>
+
+        </div>
+
+    </footer>
+    <style>
+        .cookies_bar{position: sticky; bottom: 0px; background-color:#E3E3E3; z-index: 99999; text-align: center; padding: 15px 0;}
+        .cookies_bar p{color: #000; font-size: 12px; text-align: center; font-weight: 400; padding-bottom: 10px; max-width: 90%; margin: auto;}
+        .cookies_bar a, .cookies_bar button{background-color: #2A5FB0; color: #fff; font-size: 13px; font-weight: 600; text-decoration: none; padding: 5px 10px; border-radius: 7px;border: 0px;}
+        @media (max-width:767px){
+            .cookies_bar p{font-size: 11px;}
+            .cookies_bar{padding: 10px 0;}
+            .cookies_bar a{font-size: 11px;}
+        }
+    </style>
+
+    <div class="cookies_bar" id="cookieBanner">
+        <p>We value your privacy and your trust is important to us. We use cookies to enhance your website experience. By clicking "Accept all cookies", you allow us to store cookies on your device and disclose information in accordance with our Privacy</p>
+        <button id="acceptCookiesBtn">Accept All Cookies</button>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const acceptBtn = document.getElementById("acceptCookiesBtn");
+        const cookieBanner = document.getElementById("cookieBanner");
+
+        // 1. Check if the user ALREADY accepted cookies on a previous visit
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            // If they did, hide the banner immediately so they never even see it
+            cookieBanner.style.display = "none";
+        }
+ 
+        acceptBtn.addEventListener("click", function() { 
+            cookieBanner.style.display = "none"; 
+            localStorage.setItem('cookiesAccepted', 'true');
+        });
+    });
+</script>
+<script>
+    const selected = document.querySelector('.dashboard_selected');
+    const menu = document.querySelector('.dashboard_list');
+    const selectedText = document.querySelector('.selected_text');
+
+    selected.addEventListener('click', () => {
+        menu.classList.toggle('open');
+    });
+
+    // Update selected text on click
+    document.querySelectorAll('.dashboard_menu a').forEach(item => {
+        item.addEventListener('click', function () {
+            document.querySelectorAll('.dashboard_menu a').forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
+
+            selectedText.textContent = this.textContent;
+
+            menu.classList.remove('open');
+        });
+    });
+</script>
+</body>
+
+</html>

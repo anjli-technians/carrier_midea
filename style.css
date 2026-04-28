@@ -2866,7 +2866,7 @@ body {
         .sticky-prod-header .price-content .cut-price{font-size: 16px; font-weight: 400; color: #8E8E8E;}
         .sticky-prod-header .price-content .save-price{font-size: 15px; font-weight: 500; color: #000;}
         .sticky-prod-header .price-content{line-height: 1;}
-        .sticky-prod-header .emi-line{font-size: 9px; font-weight: 400; color: #000;}
+        .sticky-prod-header .emi-line{font-size: 9px; font-weight: 400; color: #000; line-height: 16px;}
         /* ----- SWIPER THUMBNAILS STYLING ----- */
        .swiper-section .thumb-swiper-container {height: 500px;  width: 110px; margin-right: 10px; overflow: hidden;  }
        .swiper-section .thumb-swiper-container .swiper-slide { height: 75px !important;   border-radius: 7px; padding: 2px; cursor: pointer; display: flex; align-items: center; justify-content: center; background-color: #fff;  transition: all 0.2s ease;}
@@ -2900,7 +2900,7 @@ body {
          .product-details .product-price{font-size: 27px; font-weight: 700; color: #2D3893;}
          .product-details .cut-price{font-size: 20px; font-weight: 300; color: #8E8E8E;}
          .product-details .save-price{font-size: 20px; font-weight: 500; color: #000;}
-         .product-details .offer-price{font-size: 11px; font-weight: 600; color: #fff; background-color: #FE1721; padding: 4px 10px; border-radius: 0px 20px 0px 0px;}
+         .product-details .offer-price{font-size: 11px; font-weight: 600; color: #fff; background-color: #FE1721; padding: 4px 10px; border-radius: 0px 15px 0px 0px;}
          .product-details .tax{    font-size: 10px; color: #000; line-height: 1.1; margin-top: unset !important;}
          .product-details .main-price{border-bottom: 1px solid #ccc; padding-bottom: 20px;}
          .product-details .product-save .save-text{font-size: 20px; font-weight: 700; color: #000;}
@@ -2925,7 +2925,7 @@ body {
         .swiper-section .image-icons { position: absolute; top: 15px; right: 15px; color: #888; font-size: 18px;}
         .swiper-section .image-icons i { margin-left: 10px; cursor: pointer;}
         /* Feature Icons */
-        .feature-icon-box {  text-align: center; width: 60px; margin-right: 10px; font-size: 9px; line-height: 1.1; color: #000;}
+        .feature-icon-box {  text-align: center; width: 60px; margin-right: 14px; font-size: 9px; line-height: 1.1; color: #000;}
         .feature-icon-box img { width: 80%; border-radius: 7px; padding: 7px; border: 1px solid #eee;  margin-bottom: 5px; background-color: #2D3893;}
         /* Offers & Availability */
        .product-details .dotted-box { border: 1.5px dashed #FF0800; border-radius: 10px; padding: 10px; font-size: 13px; color: #000; }

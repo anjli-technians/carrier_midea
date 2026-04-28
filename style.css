@@ -369,7 +369,7 @@ body {
   left: -6px;
   color: #000;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   padding: 8px 20px;
   background-image: url("public/offer.png");
   background-size: cover;
@@ -380,7 +380,7 @@ body {
   color: #2a5fb0;
   font-weight: 700;
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .img-box {
@@ -521,7 +521,7 @@ body {
 .video-wrapper {
   border-radius: 0px;
   overflow: hidden;
-  margin-bottom: 35px;
+  margin-bottom: 35px;height: 95vh;
 }
 
 .video-wrapper video {
@@ -2496,7 +2496,7 @@ body {
 
   .video-wrapper {
     padding-left: 0;
-    padding-right: 0;margin-bottom: 20px;
+    padding-right: 0;margin-bottom: 20px;height: auto;
   }
   .blog_cards{padding-top: 10px;}
   .blog-big img{height: auto;}

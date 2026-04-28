@@ -4126,7 +4126,6 @@ body {
 } */
 
 /* ======================================================== */
-<<<<<<< HEAD
 /* address book style start */
 .address{border: 1px solid #D0D0D0;padding: 15px;border-radius: 5px;}
 .address ul{display: flex; gap: 10px; margin-bottom: 10px;list-style: none;padding-left: 0;justify-content: space-between;}
@@ -4166,9 +4165,7 @@ section{padding: 60px 0;}
 .delivered span{display: block;font-weight: 600;line-height: 20px;}
 .order_again{border: 1px solid #2A5FB0;text-decoration: none;font-size: 10px;padding: 3px 10px;display: inline-flex;border-radius: 5px;text-transform: uppercase;font-weight: 500;}
 /* order history style end */
-=======
 .container.swiper-section{padding-top: 20px; padding-bottom: 20px;}
->>>>>>> fa263f3f28ac1d6678e101b57080134468b444d6
 
         /* Responsive Adjustments */
         @media (max-width: 991px) {
@@ -4182,7 +4179,6 @@ section{padding: 60px 0;}
         }
         
         @media (max-width:767px){ 
-<<<<<<< HEAD
           .delivered{font-size: 11px;}
           .dashboard_selected {display: flex;margin-bottom: 30px;}
           .dashboard_selected .selected_text{font-size: 15px; font-weight: 500;}
@@ -4193,7 +4189,6 @@ section{padding: 60px 0;}
           .add_more{font-size: 14px; padding: 8px 40px;} 
           .dashboard_menu a.active {display: none;}
           section{padding: 30px 0;}
-=======
           .features-card-section{padding-top: 0 !important;}
           .tab-section .custom-tab-content p{line-height: 19px; font-size: 11px;}
           .faq-number{font-size: 14px;}
@@ -4209,7 +4204,6 @@ section{padding: 60px 0;}
           .product-rating .rating-number{font-size: 11px;}
           .product-rating .star-rating img{width: 10px;}
           .combined-section{height: 100vh; overflow-y: auto;}
->>>>>>> fa263f3f28ac1d6678e101b57080134468b444d6
           .swiper-section .off-text-blue{top: 40px;}
           #main-product-image{margin-top: 60px;}
           .reviews-section{margin-top: 20px; border-bottom: 1px solid #ccc; padding-bottom: 20px;}

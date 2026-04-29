@@ -10,7 +10,14 @@ body {
   background: #fff;
   border-bottom: 2px solid #e0e0e0;
   padding: 10px 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;position: sticky;
+    top: 27px;
+    z-index: 99;
+}
+.navbar { 
+    position: sticky;
+    top: 103px;
+    z-index: 99;
 }
 
 .logo-section {
@@ -23,7 +30,9 @@ body {
   height: 54px;
   object-fit: contain;
 }
-.top_nav{background: #F2F2F2;display: flex; padding: 2px;}
+.top_nav{background: #F2F2F2;display: flex; padding: 2px;position: sticky;
+    top: 0;
+    z-index: 99;}
 .top_nav p{color: #17469E;
     font-size: 10px;font-weight: 500;
     text-align: center;
@@ -1943,6 +1952,10 @@ body {
 .nav-pills .nav-link.active {color: #2a5fb0cc !important; }
 .blog_cards{padding-top: 20px;}
 @media (max-width: 767px) {
+  .swiper-section .thumb-swiper-container .swiper-slide.active-thumb {
+    border: 1px solid #292929 !important;
+    height: 60px !important;
+}
   .blog_cards .col-lg-11  .row{gap: 10px;}
   .nav-pills .nav-link::after{bottom: -5px;}
   .user_details{display: flex;list-style: none;padding-left: 0;gap: 15px;margin-bottom: 0px;}
@@ -1992,8 +2005,8 @@ body {
   .card-icon,
   .card-icon,
   .card-icon {
-    width: 30px !important;
-    height: 30px !important;
+    width: 25px !important;
+    height: 25px !important;
   }
   .card-desc {
     font-size: 12px !important;
@@ -2011,7 +2024,7 @@ body {
     font-weight: 500 !important;
   }
   .get-support-btn img {
-    height: 20px !important;
+    height: 18px !important;
   }
   .help-header h2 {
     font-size: 17px !important;
@@ -2019,8 +2032,7 @@ body {
   .help-header p {
     font-size: 11px !important;
   }
-  .get-support-btn {
-    width: 140px;align-items: center;
+  .get-support-btn { align-items: center;
         justify-content: center;
         border-radius: 10px !important;
   }
@@ -2540,7 +2552,7 @@ body {
   .sku{font-size: 9px;}
   .price{font-size: 18px;}
   .old-price{font-size: 14px;}
-  .inclusive_tax, .strip-desc{font-size: 9px !important;}
+  .inclusive_tax, .strip-desc{font-size: 10px !important;}
   .info {font-size: 9px; margin-bottom: 7px;}
   .buy-btn img{width: 13px;}
   .buy-btn{font-size: 11px !important;}
@@ -2571,7 +2583,7 @@ body {
   .help-header p {font-size: 12px;}
   .get-support-btn{font-size: 11px;padding: 7px 20px;}
   .get-support-btn img{height: 22px;}
-  .help-section .card{padding: 18px;}
+  .help-section .card{padding: 18px;box-shadow: 0px 4px 15px 0px #00000026 !important;padding: 20px !important;}
   .card-title {font-size: 23px;}
   .plus-circle, .card-icon {width: 40px;height: 40px;}
   .card-desc {font-size: 13px;}
@@ -2856,12 +2868,14 @@ body {
 .header-search-section .search-btn { background: none; border: none; padding: 0 10px; cursor: pointer; color: #d1d5db;   font-size: 16px; display: flex; align-items: center; justify-content: center;}
 .header-search-section .search-btn:hover { color: #9ca3af;}
         /* Sticky Header Bar */
-.sticky-prod-header { background-color: #EBEBEB;  padding: 15px 0; }
-        .sticky-prod-header .btn-small{font-size: 10px; font-weight: 400; padding: 4px 3px; background-color: #2A5FB0; color: #fff; width: 90px;}
+.sticky-prod-header { background-color: #EBEBEB;  padding: 15px 0;position: sticky;
+    top: 147px;
+    z-index: 99;}
+        .sticky-prod-header .btn-small{font-size: 11px; font-weight: 300; padding: 4px 3px; background-color: #2A5FB0; color: #fff; width: 90px;}
         .sticky-prod-header .add-text{font-size: 15px; font-weight: 500; padding-right: 100px;}
-        .sticky-prod-header .add-text p{margin-bottom: unset; font-size: 15px;}
+        .sticky-prod-header .add-text p{margin-bottom: unset; font-size: 17px;font-weight: 400;}
         .sticky-prod-header .add-text span{font-size: 9px; font-weight: 300;}
-        .sticky-prod-header .price-content .price{font-size: 15px; font-weight: 700; color: #2A5FB0; }
+        .sticky-prod-header .price-content .price{font-size: 19px; font-weight: 700; color: #2A5FB0; }
         .sticky-prod-header .price-content .mrp{font-size: 9px; font-weight: 400; }
         .sticky-prod-header .price-content .cut-price{font-size: 16px; font-weight: 400; color: #8E8E8E;}
         .sticky-prod-header .price-content .save-price{font-size: 15px; font-weight: 500; color: #000;}
@@ -2887,8 +2901,8 @@ body {
         .main-image-container .image-icons .vr-img,  .main-image-container .image-icons .vr-img2{width: 30px; height: auto;}
          .main-image-container .image-icons .vr-img2{margin-left: 10px; width: 20px;}
          /* main.swiper-section{padding-top: 20px;} */
-         .product-details .product-title{font-size: 19px; font-weight: 600; line-height: 25px; color: #000;}
-         .product-details .product-code{font-size: 14px; font-weight: 400; color: #000;}
+         .product-details .product-title{font-size: 19px; font-weight: 600; line-height: 28px; color: #000;}
+         .product-details .product-code{font-size: 13px; font-weight: 400; color: #000;}
          .product-rating .rating-number{font-size: 12px; color: #000; font-weight: 600;}
          .product-rating{display: flex; flex-direction: row;}
          .product-rating .star-rating{    display: flex;align-items: center;justify-content: center;gap: 2px; margin-left: 3px;}
@@ -2897,20 +2911,21 @@ body {
          .product-details .stock-check .green-dot{font-size: 12px; background-color: #6FFF00; border: 1px solid #C3C3C3; border-radius: 50%; width: 12px; height: 12px; display: inline-block; margin-right: 5px; box-shadow: 0px 4px 4px 0px #00000040;}
          .product-details .feature-icon-box.six-in-one{  width: 30px; padding-top: 20px; color: #707070;} 
          .product-details .feature-icon-box.six-in-one span{ background-color: #78D9FF; width: 30px; display: block; padding: 3px 3px;}
-         .product-details .product-price{font-size: 27px; font-weight: 700; color: #2D3893;}
+         .product-details .product-price{font-size: 23px; font-weight: 700; color: #2A5FB0;}
          .product-details .cut-price{font-size: 20px; font-weight: 300; color: #8E8E8E;}
-         .product-details .save-price{font-size: 20px; font-weight: 500; color: #000;}
-         .product-details .offer-price{font-size: 11px; font-weight: 600; color: #fff; background-color: #FE1721; padding: 4px 10px; border-radius: 0px 15px 0px 0px;}
+         .product-details .save-price{font-size: 19px; font-weight: 500; color: #000;}
+         .product-details .offer-price{font-size: 10px; font-weight: 600; color: #fff; background-color: #FE1721; padding: 4px 10px; border-radius: 0px 15px 0px 0px;}
          .product-details .tax{    font-size: 10px; color: #000; line-height: 1.1; margin-top: unset !important;}
-         .product-details .main-price{border-bottom: 1px solid #ccc; padding-bottom: 20px;}
+         .product-details .main-price{border-bottom: 0px solid #ccc; padding-bottom: 20px;}
          .product-details .product-save .save-text{font-size: 20px; font-weight: 700; color: #000;}
          .product-details .product-save .save-text span{color: #ff0000;}
-         .product-details .product-save .save-btn{background-color: #2A5FB0; color: #fff; font-size: 14px; font-weight: 400; box-shadow: 0px 4.18px 4.18px 0px #00000040; padding: 6px 35px;}
+         .product-details .product-save .save-btn{background-color: #2A5FB0; color: #fff; font-size: 15px;letter-spacing: 0.5px;font-weight: 400; box-shadow: 0px 4.18px 4.18px 0px #00000040; padding: 6px 35px;}
          .product-details .warrenty-line{font-size: 12px; color: #000; border-bottom: 1px solid #ccc;}
          .product-details .pin-text{font-size: 16px; font-weight: 500; color: #000;}
-         .product-details .pin-code input{    border: 1px solid #ccc; border-radius: 10px; padding: 5px 15px; width: 250px; font-size: 14px; color: #868686;}
-         .product-details .pin-code .btn-check-avail{background-color: #2A5FB0; color: #fff; font-size: 14px; font-weight: 400; padding: 8px 30px;}
-         .product-details .correct-pin{font-size: 12px; color: #219653; display: flex; align-items: center; gap: 5px;}
+         .product-details .pin-code input{    border: 1px solid #ccc; border-radius: 10px; padding: 5px 15px; width: 250px; font-size: 12px; color: #868686;}
+         .product-details .pin-code .btn-check-avail{background-color: #2A5FB0; color: #fff; font-size: 13px; font-weight: 500; padding: 8px 30px;}
+         .product-details .correct-pin{font-size: 11px; color: #219653; display: flex; align-items: center; gap: 5px;}
+         .offer_banner p{font-size: 11px; max-width: 85%; position: relative; z-index: 2;}
          .product-details .emi-text{font-size: 12px; color: #000;}
          .product-details .gold-warranty-box{box-shadow: 0px 2.83px 7.08px 0px #00000040;
         border: 1px solid #D5D5D5; background: url(./images/warrenty-img.png); background-size: cover;     background-position: 70% 40%;background-repeat: no-repeat; 
@@ -2919,7 +2934,8 @@ body {
     .product-details .gold-warranty-box h5 .fw-normal{ font-size: 11px !important;}
     .product-details .gold-warranty-box .warrenty-box-text{color: #000; font-weight: 500; font-size: 11px; padding: 7px 0; border-top: 1px solid #0000001A;}
     .product-details .gold-warranty-box .warrenty-box-text span{color: #FF0000;}
-    .product-details .gold-warranty-box .years-text{font-size: 11px;}
+    .product-details .gold-warranty-box .years-text{font-size: 10px;}
+    .moretext {display: none;}
 
         .swiper-section .off-text-blue { position: absolute; top: 35px; left: 10px; color: #2A5FB0; font-weight: bold;}
         .swiper-section .image-icons { position: absolute; top: 15px; right: 15px; color: #888; font-size: 18px;}
@@ -3063,7 +3079,7 @@ body {
         /* Make each tab take up equal width */
        .tab-section .custom-tabs .nav-item { flex: 1; margin: 0;    width: 20%; max-width: 20%; margin-left: 130px;}
         /* Inactive Tab Styling */
-       .tab-section .custom-tabs .nav-link { border: none; border-radius: 0; color: #777777;  font-size: 12px;  font-weight: 500;  padding: 12px 20px;  width: 70%;  text-align: center; transition: all 0.3s ease;}
+       .tab-section .custom-tabs .nav-link { border: none; border-radius: 0; color: #808080;  font-size: 12px;  font-weight: 500;  padding: 12px 20px;  width: 70%;  text-align: center; transition: all 0.3s ease;}
 
        .tab-section .custom-tabs .nav-link:hover { color: #2A5FB0;}
         /* Active Tab Styling */
@@ -3131,7 +3147,7 @@ body {
 
 /* ================================== Features CARD SECTION  ================================================ */
  .features-card-section {
-            padding: 30px 0;
+            padding: 50px 0 0; 
         }
 
         /* Feature Card Styling */
@@ -3153,14 +3169,13 @@ body {
             font-weight: 700;
             font-size: 18px;
             color: #000000;
-            margin-bottom: 12px;
-            letter-spacing: -0.5px;
+            margin-bottom: 12px; 
         }
 
         .feature-card p {
-            font-size: 13px;
+            font-size: 12px;
             color: #555555;
-            line-height: 1.6;
+            line-height: 18px;
             margin-bottom: 0;
         }
 /* ================================================================================== */
@@ -3217,7 +3232,7 @@ body {
         .faq-accordion .accordion-item {
             border: none;
             background-color: transparent;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
         }
         .faq-accordion button:focus:not(:focus-visible){border: 0;}
 
@@ -3225,7 +3240,7 @@ body {
             background-color: transparent;
             color: #000000;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 13px;
             padding: 5px 0;
             box-shadow: none !important;  
         }
@@ -3295,9 +3310,9 @@ body {
         /* Accordion Body / Answer Text */
         .faq-accordion .accordion-body {
             padding: 0 0 15px 45px; /* Aligns text perfectly under the question, skipping the number */
-            color: #666666;
+            color: #383838;
             font-size: 12px;
-            line-height: 1.6;
+            line-height: 20px; width: 90%;
         }
 
         /* --- Reviews Section Styling --- */
@@ -4203,44 +4218,61 @@ body {
           .dashboard_menu a.active {display: none;}
           .features-card-section{padding-top: 0 !important;}
           .tab-section .custom-tab-content p{line-height: 19px; font-size: 11px;}
-          .faq-number{font-size: 14px;}
+          .faq-number{font-size: 12px;}
           .faq-accordion .accordion-button.collapsed .custom-toggle-icon::before{width: 13px; height: 13px;}
-          .faq-accordion .accordion-button:not(.collapsed) .custom-toggle-icon::before{width: 12px; height: 12px;}
+          .faq-accordion .accordion-button:not(.collapsed) .custom-toggle-icon::before{width: 10px; height: 10px;}
+          .accordian-section {padding-top: 30px;}
           .container.swiper-section{padding-top: 0px;}
           .product-details .gold-warranty-box .warrenty-box-text span{font-size: 10px;}
-          .gold-warranty-box  p{font-size: 10px;}
-          .product-details .blue-offer-box a{font-weight: 200;}
-          .product-details .blue-offer-box .bank-offer{font-size: 15px; font-weight: 500; padding-bottom: 0 !important;}
-          .product-details .correct-pin{font-size: 11px;}
+          .gold-warranty-box  p{font-size: 10px !important;}
+          .product-details .blue-offer-box a{font-weight: 200;font-size: 10px;}
+          .product-details .blue-offer-box .bank-offer{font-size: 15px; font-weight: 500; padding-bottom: 10px !important;}
+          .product-details .blue-offer-box p {font-size: 11px;}
+          .product-details .correct-pin{font-size: 10px;}
           .product-details .stock-check .green-dot{width: 10px; height: 10px;}
           .product-rating .rating-number{font-size: 11px;}
           .product-rating .star-rating img{width: 10px;}
           .combined-section{height: 100vh; overflow-y: auto;}
-          .swiper-section .off-text-blue{top: 40px;}
+          .swiper-section .off-text-blue{top: 40px;font-size: 12px;}
           #main-product-image{margin-top: 60px;}
           .reviews-section{margin-top: 20px; border-bottom: 1px solid #ccc; padding-bottom: 20px;}
           .review-box-text{font-size: 11px; font-weight: 400; }
-          .btn-write-review{width: 140px; font-size: 12px; padding: 7px 15px; border-radius: 10px; font-weight: 400;} 
+          .btn-write-review{font-size: 11px;
+        letter-spacing: 0.1px;
+        padding: 4px 15px;
+        border-radius: 8px;
+        font-weight: 300;
+        background: #2A5FB0;
+        color: #fff;} 
           .faq-accordion .accordion-body{font-size: 11px;}
           .faq-accordion .accordion-button{font-size: 12px;}
           .feature-card p{font-size: 11px;}
           .feature-card, .feature-card img{margin-bottom: 10px;}
-          .feature-card h4{font-size: 18px; font-weight: 600;}
+          .feature-card h4{font-size: 16px; font-weight: 700;margin-bottom: 5px;}
+          .deal-swiper-section{padding-top: 10px;}
+          .custom-toggle-icon{}
           .custom-play-btn{height: 50px; width: 50px; font-size: 20px;}
           .tab-section .custom-tab-content{padding: 10px 10px; text-align: left;}
-          .tab-section .custom-tabs .nav-link{font-weight: 400;padding: 10px 5px;}
-          .product-details .gold-warranty-box .years-text{font-size: 10px; margin-bottom: unset !important;}
+          .tab-section .custom-tabs .nav-link{font-weight: 400;padding: 12px 3px;font-size: 11px;}
+          .product-details .gold-warranty-box .years-text{font-size: 10px; margin-bottom: unset !important;max-width: 83%;}
           .product-details .gold-warranty-box h5{font-size: 15px; padding-bottom: 5px !important;}
-          .product-details .text-muted.small{margin-bottom: 10px !important;font-size: 10px; border-bottom: 1px solid #ccc; padding-bottom: 10px;}
+          .product-details .text-muted.small{margin-bottom: 10px !important;font-size: 10px; border-bottom: 1px solid #ccc; padding-bottom: 10px;color: #000 !important;}
           .product-details .dotted-box{font-size: 12px; border-radius: 4px;}
-          .product-details .pin-text{font-size: 14px;}
-          .product-details .pin-code .btn-check-avail {padding: 2px 40px; font-size: 11px;}
+          .product-details .pin-text{font-size: 13px;}
+          .product-details .pin-code .btn-check-avail {padding: 5px 10px;
+        font-size: 11px;
+        width: 40%;
+        text-align: center;
+        border-radius: 11px;
+        box-shadow: 0px 4px 15px 0px #00000040;}
           .product-details .warrenty-line{font-size: 10px; margin-top: 7px;}
           .product-details .product-save .save-text{font-size: 15px;}
           .product-details .product-save .save-btn{font-size: 11px; padding: 4px 25px;}
           .product-details .features-card .features-list{margin: 0 0 10px 0;}
-          .product-details .features-card .read-more-btn{padding: 5px 15px; font-size: 10px; font-weight: 500;}
-          .product-details .features-card .features-list li{font-size: 11px;}
+          .product-details .features-card .read-more-btn{padding: 5px 15px; font-size: 9px; font-weight: 500;border-radius: 7px;}
+          .product-save{padding: 15px 0 0 !important;border-top: 1px solid #DDDDDD;margin-top: 20px;}
+          .warrenty-line{padding-bottom: 20px;} 
+          .product-details .features-card .features-list li{font-size: 10px;line-height: 17px;}
           .product-details .features-card .features-title{font-size: 16px;}
           .product-details .features-card{margin-bottom: 0px; margin-top: 10px; padding: 20px;}
           .product-details .mobile-design{margin-bottom: 0 !important; padding-bottom: 10px;border-bottom: 1px solid #ccc;}
@@ -4249,7 +4281,8 @@ body {
           .m-mobile-rating { display: flex; align-items: center; gap: 10px; margin-bottom: 10px !important;}
           .product-details .save-price{font-size: 14px;}
           .product-details .cut-price{font-size: 16px;}
-          .product-details .product-price{font-size: 24px;}
+          .product-details .product-price{font-size: 18px;color: #2D3893;}
+          .feature-icon-box img{width: 100%;}
           .product-details .tax{font-size: 9px;}
           .product-details .m-mobile .offer-price{display: none;}
           .main-image-container .image-icons .vr-img2{width: 15px;}
@@ -4258,30 +4291,31 @@ body {
     .mobile-bar li{font-size: 11px;}
     .mobile-bar{background-color:#2D3893 ; color: #fff;}
     .mobile-bar ul li .btn{background-color: #FFF200;color: #000;border: unset; border-radius: 7px; font-size: 11px; padding: 3px 15px;}
-          .top-header{position: sticky;top: 0;z-index: 999999999999999;}
+          .top-header{position: sticky;top: 27px;z-index: 999999999999999;}
           .hamburger p{    margin-bottom: 0; font-size: 10px; margin-left: 10px; /* padding: 4px 0px; */}
-          .sticky-prod-header .add-text p.d-flex{color: #000; font-size: 14px;}
-          .sticky-prod-header .add-text p{color: #4E4D4D; font-size: 12px;}
+          .sticky-prod-header .add-text p.d-flex{color: #000; font-size: 12px;font-weight: 600;}
+          .sticky-prod-header .add-text p{color: #4E4D4D; font-size: 11px;}
           .product-details .blue-offer-box{padding: 10px; display: flex; flex-direction: column; justify-content: space-evenly;}
-          .product-details .product-title{font-size: 15px;}
+          .product-details .product-title{font-size: 15px;line-height: 23px;}
           .deals-title{font-size: 16px; color: #000;}
           .card-title{font-size: 21px;}
-          .product-details .pin-code input{width: 180px; padding: 1px 15px; font-size: 10px;}
+          .product-details .pin-code input{width: 60%; padding: 1px 15px; font-size: 10px;}
           /* main.swiper-section{padding-top: 0px;} */
-          .swiper-section .ribbon-yellow{top: 8px;}
+          .swiper-section .ribbon-yellow{top: 8px; font-size: 12px;}
           .sticky-prod-header .add-text{padding-bottom: 5px; padding-right: unset;}
           .sticky-prod-header .price-content{padding-bottom: 8px;}
-          .sticky-prod-header .btn-small{  box-shadow: 0px 4px 15px 0px #00000040;}
+          .sticky-prod-header .btn-small{  box-shadow: 0px 4px 15px 0px #00000040;font-weight: 500;font-size: 10px;}
           .sticky-prod-header .price-content .save-price{display: none;}
-          .sticky-prod-header .price-content .cut-price{color: #4E4D4D;}
+          .sticky-prod-header .price-content .cut-price{color: #4E4D4D;font-size: 14px;}
           .sticky-prod-header .price-content .price{color: #2A5FB0;}
           .sticky-prod-header .emi-line{display: none;}
-          .sticky-prod-header {background-color: #EBEBEB; color: #000;}
+          .sticky-prod-header {background-color: #EBEBEB; color: #000;top: unset;
+        z-index: 9;}
           .sticky-prod-header .container{    display: flex !important;
     flex-direction: column;
     align-items: flex-start !important;
     text-align: left;}  
-          .swiper-section .main-image-container{padding: 20px; height: 450px;}
+          .swiper-section .main-image-container{padding: 20px; height: 320px;}
           .sticky-left-col{display: flex; flex-direction: column-reverse; top: 0; margin-bottom: 0 !important; padding-bottom: 0 !important ;}
           .swiper-section .thumb-swiper-container{    height: auto;
     width: 100%;

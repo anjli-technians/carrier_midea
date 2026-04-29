@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <style>
+        section{padding: 60px 0;}
+        @media (max-width: 767px) {
+            section{padding: 30px 0;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top_nav">
+      <p class="d-none d-md-block mx-auto">Now delivering to more locations—check your Pincode and shop with ease!</p>
+        <marquee class="d-block d-md-none">  <p>Now delivering to more locations—check your Pincode and shop with ease!</p></marquee>
+    </div>
+    <div class="top-header">
+        <div class="container px-0">
+            <div class="d-flex align-items-center justify-content-between gap-2 gap-md-3">
+
+                <div class="logo_search_flex">
+                    <!-- Logos -->
+                    <div class="logo-section">
+                        <!-- <img src="public/menu.png" alt="img" class="img-fluid menu"> -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                             <img src="public/menu.png" alt="img" class="img-fluid menu">
+                        </button>
+                        <a href="#"><img src="public/logo.png" alt="Carrier"></a>
+
+
+                    </div>
+                    <div class="d-flex">
+                        <!-- Location -->
+                        <div class="location-btn">
+                            <img src="public/location.png" alt="location">
+                            Search your location ▾
+                        </div>
+
+
+                        <!-- Search -->
+                        <div class="search-wrap">
+                            <input type="text" placeholder="Search products...">
+                            <button><img src="public/search.png" alt="search"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Account -->
+                <a href="#" class="my-account d-none d-lg-flex">
+                    <span>My Account</span>
+                    <img src="public/user.png" alt="account">
+                </a>
+                <ul class="user_details">
+                    <li>
+                        <div class="search">
+                            <a href="#"><img src="public/search_icon.png" alt="img" class="img-fluid"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="account">
+                            <a href="#"><img src="public/user_login.png" alt="img" class="img-fluid"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart">
+                            <a href="#"><img src="public/cart_icon.png" alt="img" class="img-fluid"></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!--MAIN NAV-->
+    <nav class="navbar  navbar-expand-lg ">
+        <div class="container"> 
+            <!--  -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Carrier Air Conditioners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Midea Air Conditioners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Camipro Stabilizer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li> 
+                </ul>
+                <div class="d-none d-lg-flex ms-auto">
+                    <div class="nav-cart">
+                        My Cart
+                        <!-- <div class="cart-badge">0</div> -->
+
+                        <img src="public/cart.png" alt="cart">
+                    </div>
+                    <div class="nav-wishlist">
+
+                        My Wishlist
+                        <img src="public/wishlist_m.png" alt="wishlist">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav> 
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="add_to_cart">
+                        <div class="d-flex">
+                            <img src="public/ac1.png" alt="img" class="img-fluid">
+                            <h3 class="d-block d-md-none">Carrier 1.5 Ton 3 Star Wi-Fi <br>Smart Flexicool Inverter Split AC</h3>
+                        </div>
+                        <div>
+                            <h3 class="d-none d-md-block">Carrier 1.5 Ton 3 Star Wi-Fi <br>Smart Flexicool Inverter Split AC</h3>
+                            <div class="quantity">
+                                <a href="#" class="quantity__minus"><span>-</span></a>
+                                <input name="quantity" type="text" class="quantity__input" value="1">
+                                <a href="#" class="quantity__plus"><span>+</span></a>
+                            </div>
+                            <span class="deliver_text">Free Delivery within 2-4 working days</span>
+                        </div>
+                        <div>
+                            <div class="main-price d-none d-md-block">
+                                <span class="product-price">₹ 37,271</span>
+                                <span class="text-decoration-line-through cut-price mx-2">₹ 53,690</span> 
+                                <div class="tax" >(Inclusive of all taxes)</div>
+                                <div class="saved_amount">
+                                    You saved ₹ 15,010
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="delivery_instruction">
+                        <div class="d-flex align-items-center"><img src="public/message.png" alt="img" class="img-fluid"><h4 class="mb-0">Delivery Instructions</h4></div>
+                        <span class="note">Add a note to your order (optional)</span>
+                        <input type="text" name="name" placeholder="Enter your text...." class="form-control">
+                        <p class="drop_example">Examples: "Leave at front door" or "Ring doorbell for access"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+           
+    <section class="help-section">
+        <div class="container">
+            <div class="row">
+                <div class="help-header d-flex flex-row justify-content-between align-items-center">
+                    <div>
+                        <h2>NEED HELP?</h2>
+                        <p>We're here to provide all the help you need.</p>
+                    </div>
+                    <button class="get-support-btn">
+                        <!-- Phone ring icon -->
+                        <img src="public/bx_bx-phone-call.png" alt="img" class="img-fluid">
+                        Get Support
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Product Registration -->
+                <div class="col-lg-3 col-md-6 col-6 p-1">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-title">Product<br />Registration</div>
+                            <div class="plus-circle">
+                                <img src="public/plus.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="card-desc">
+                            Registering your product will help you get faster support.
+                        </p>
+                        <button class="arrow-btn">
+                            <img src="public/rgt-arrow.png" alt="img" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Support -->
+                <div class="col-lg-3 col-md-6 col-6 p-1">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-title">Product<br />Support</div>
+                            <div class="card-icon">
+                                <img src="public/Artboard11.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="card-desc">
+                            Find manual, troubleshoot and warranty of your CMI product.
+                        </p>
+                        <button class="arrow-btn">
+                            <img src="public/rgt-arrow.png" alt="img" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Order Support -->
+                <div class="col-lg-3 col-md-6 col-6 p-1">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-title">Order<br />Support</div>
+                            <div class="card-icon">
+                                <img src="public/order.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="card-desc">Track your order and check order FAQ.</p>
+                        <button class="arrow-btn">
+                            <img src="public/rgt-arrow.png" alt="img" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Repair Request -->
+                <div class="col-lg-3 col-md-6 col-6 p-1">
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-title">Repair<br />Request</div>
+                            <div class="card-icon">
+                                <img src="public/air-conditioner.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="card-desc">Request repair service conveniently online.</p>
+                        <button class="arrow-btn">
+                            <img src="public/rgt-arrow.png" alt="img" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-main container">
+
+            <!-- DESKTOP FOOTER (UNCHANGED) -->
+            <div class="row d-none d-md-flex">
+
+                <div class="col-md-8">
+
+                    <div class="row">
+
+                        <!-- COL 1 -->
+                        <div class="footer-col col-md-4">
+                            <h4>About Carrier Midea India</h4>
+
+                            <ul>
+                                <li><a href="#">Vision and Values</a></li>
+                                <li><a href="#">Chairman's Message</a></li>
+                                <li><a href="#">MD's Message</a></li>
+                                <li><a href="#">Code of Ethics and Conduct</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Corporate Video</a></li>
+                                <li><a href="#">Manufacturing</a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <!-- COL 2 -->
+                        <div class="footer-col col-md-4">
+
+                            <h4>Products</h4>
+
+                            <ul>
+                                <li><a href="#">Carrier Air Conditioner</a></li>
+                                <li><a href="#">Midea Air Conditioner</a></li>
+                                <li><a href="#">Light Commerical Air Conditioner</a></li>
+                                <li><a href="#">VRF Air Conditioner</a></li>
+                                <li><a href="#">VRF IDU</a></li>
+                                <li><a href="#">VRF Controllers</a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <!-- COL 3 -->
+                        <div class="footer-col col-md-4">
+
+                            <h4>Customer Support</h4>
+
+                            <ul>
+                                <li><a href="#">Customer Helpline</a></li>
+                                <li><a href="#">New to CMI</a></li>
+                                <li><a href="#">Annual Maintenance Contract</a></li>
+                                <li><a href="#">Camipro Spare Solutions</a></li>
+                                <li><a href="#">Service Request</a></li>
+                                <li><a href="#">Resources</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="social-label">Follow us now</div>
+
+                    <div class="social-icons">
+
+                        <a href="#"><img src="public/facebook.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/instagram.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/twitter.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/tik-tok.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/yt.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/telegram.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/whatsapp.png" class="img-fluid"></a>
+                        <a href="#"><img src="public/linkedin.png" class="img-fluid"></a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="footer-col footer-right col-md-4">
+
+                    <img src="public/phones.png" alt="App Mockup" class="phone-img" />
+
+                    <div class="store-badges">
+
+                        <a href="#" class="store-badge">
+                            <img src="public/googleplay.png" class="img-fluid">
+                        </a>
+
+                        <a href="#" class="store-badge">
+                            <img src="public/appstore.png" class="img-fluid">
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOBILE FOOTER -->
+            <div class="d-md-none">
+
+
+                <div class="accordion" id="footerAccordion">
+
+                    <!-- ABOUT -->
+                    <div class="accordion-item bg-transparent border-0">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed bg-transparent text-white"
+                                data-bs-toggle="collapse" data-bs-target="#aboutFooter">
+
+                                About Carrier Midea India
+
+                            </button>
+
+                        </h2>
+
+
+                        <div id="aboutFooter" class="accordion-collapse collapse">
+
+                            <div class="accordion-body">
+
+                                <ul class="list-unstyled">
+
+                                    <li><a href="#">Vision and Values</a></li>
+                                    <li><a href="#">Chairman's Message</a></li>
+                                    <li><a href="#">MD's Message</a></li>
+                                    <li><a href="#">Code of Ethics and Conduct</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Corporate Video</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUCTS -->
+                    <div class="accordion-item bg-transparent border-0">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed bg-transparent text-white"
+                                data-bs-toggle="collapse" data-bs-target="#productsFooter">
+
+                                Products
+
+                            </button>
+
+                        </h2>
+
+
+                        <div id="productsFooter" class="accordion-collapse collapse">
+
+                            <div class="accordion-body">
+
+                                <ul class="list-unstyled">
+
+                                    <li><a href="#">Carrier Air Conditioner</a></li>
+                                    <li><a href="#">Midea Air Conditioner</a></li>
+                                    <li><a href="#">Light Commerical Air Conditioner</a></li>
+                                    <li><a href="#">VRF Air Conditioner</a></li>
+                                    <li><a href="#">VRF IDU</a></li>
+                                    <li><a href="#">VRF Controllers</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CUSTOMER SUPPORT -->
+                    <div class="accordion-item bg-transparent border-0">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed bg-transparent text-white"
+                                data-bs-toggle="collapse" data-bs-target="#supportFooter">
+
+                                Customer Support
+
+                            </button>
+
+                        </h2>
+
+
+                        <div id="supportFooter" class="accordion-collapse collapse">
+
+                            <div class="accordion-body">
+
+                                <ul class="list-unstyled">
+
+                                    <li><a href="#">Customer Helpline</a></li>
+                                    <li><a href="#">New to CMI</a></li>
+                                    <li><a href="#">Annual Maintenance Contract</a></li>
+                                    <li><a href="#">Camipro Spare Solutions</a></li>
+                                    <li><a href="#">Service Request</a></li>
+                                    <li><a href="#">Resources</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE IMAGE -->
+                <div class="text-center mt-4 border_footer">
+
+                    <img src="public/phones.png" class="img-fluid" style="max-width:220px;">
+
+                    <div class="d-flex justify-content-center gap-2 mt-3 app_icon">
+
+                        <img src="public/googleplay.png" height="40">
+                        <img src="public/appstore.png" height="40">
+
+                    </div>
+
+                </div>
+
+
+                <!-- SOCIAL ICONS -->
+                <div class="text-center mt-4 border_footer_social">
+
+                    <div class="social-label">Follow us now</div>
+
+                    <div class="social-icons justify-content-center">
+
+                        <a href="#"><img src="public/facebook.png"></a>
+                        <a href="#"><img src="public/instagram.png"></a>
+                        <a href="#"><img src="public/twitter.png"></a>
+                        <a href="#"><img src="public/tik-tok.png"></a>
+                        <a href="#"><img src="public/yt.png"></a>
+                        <a href="#"><img src="public/telegram.png"></a>
+                        <a href="#"><img src="public/whatsapp.png"></a>
+                        <a href="#"><img src="public/linkedin.png"></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-links">
+
+                <a href="#">Our Policies</a>
+                <span>|</span>
+
+                <a href="#">Disclaimer</a>
+                <span>|</span>
+
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+
+                <a href="#">Site Map</a>
+
+            </div>
+
+            <div class="footer-copyright">
+                2025 © Carrier Midea India
+            </div>
+
+        </div>
+
+    </footer>
+    <style>
+       
+    </style>
+
+    <div class="cookies_bar" id="cookieBanner">
+        <p>We value your privacy and your trust is important to us. We use cookies to enhance your website experience. By clicking "Accept all cookies", you allow us to store cookies on your device and disclose information in accordance with our Privacy</p>
+        <button id="acceptCookiesBtn">Accept All Cookies</button>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const acceptBtn = document.getElementById("acceptCookiesBtn");
+        const cookieBanner = document.getElementById("cookieBanner");
+
+        // 1. Check if the user ALREADY accepted cookies on a previous visit
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            // If they did, hide the banner immediately so they never even see it
+            cookieBanner.style.display = "none";
+        }
+ 
+        acceptBtn.addEventListener("click", function() { 
+            cookieBanner.style.display = "none"; 
+            localStorage.setItem('cookiesAccepted', 'true');
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+  const minus = $('.quantity__minus');
+  const plus = $('.quantity__plus');
+  const input = $('.quantity__input');
+  minus.click(function(e) {
+    e.preventDefault();
+    var value = input.val();
+    if (value > 1) {
+      value--;
+    }
+    input.val(value);
+  });
+  
+  plus.click(function(e) {
+    e.preventDefault();
+    var value = input.val();
+    value++;
+    input.val(value);
+  })
+});
+</script>
+</body>
+
+</html>

@@ -16,7 +16,7 @@ body {
 }
 .navbar { 
     position: sticky;
-    top: 103px;
+    top: 0px;
     z-index: 99;
 }
 

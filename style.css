@@ -15,8 +15,8 @@ body {
     z-index: 99;
 }
 .navbar { 
-    position: sticky;
-    top: 0px;
+    position: sticky !important;
+    top: 103px;
     z-index: 99;
 }
 

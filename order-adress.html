@@ -154,6 +154,7 @@
 
         /* MOBILE BEHAVIOR */
         @media (max-width: 768px) {
+            .address-card{margin-top: 0;}
 
             .dashboard_selected {
                 display: flex;
@@ -259,9 +260,10 @@
 
         .address-card {
             background: #fff;
-            border-radius: 14px;
-            padding: 30px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            padding: 30px; 
+            box-shadow: 0px 4px 30px 0px #00000040; 
+            margin-top: 20px;
         }
 
         .address-card .section-title {
@@ -387,7 +389,7 @@
         }
 
         .mobile-summary-box {
-            border: 1px solid #ddd;
+            border: 1px solid #F0F0F0;
             border-radius: 10px;
             padding: 15px;
             background: #fff;
@@ -489,11 +491,22 @@
 
         /* ========================================== */
         @media (max-width: 768px) {
+            .btn-save{border-radius: 4px;padding: 7px 25px; font-size: 11px;}
+            .form-control, .form-select{border-radius: 4px;}
+            .address-card .section-title{text-transform: capitalize;}
+            .mobile-summary-box{margin-bottom: 15px;}
+            .mobile-summary-note{font-size: 9px; margin-bottom: 5px;}
+            .mobile-summary-toggle{font-size: 11px;
+            padding: 7px 12px;}
+            .mobile-summary-title{font-size: 13px;}
+            .stepper-wrapper{max-width: 300px; margin: auto;}
+             .address-card{box-shadow: unset;}
             .radio-group {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 0px;
+                margin-top: 0;
             }
             
             .radio-group label {
@@ -649,7 +662,7 @@
 
                 <div class="col-md-9">
                     <div class="row ">
-                        <div class="col-lg-10">
+                        <div class="col-lg-11">
                             <!-- Progress Steps -->
                             <!-- <div class="progress-steps mb-4">
                                 <div class="step active">
@@ -681,10 +694,7 @@
 
                             </div>
                             <!-- ======================================== -->
-                            <div class="address-card">
-
-                                <!--  -->
-                                <!-- MOBILE ORDER SUMMARY -->
+                             <!-- MOBILE ORDER SUMMARY -->
                                 <div class="mobile-summary d-lg-none">
 
                                     
@@ -710,6 +720,10 @@
 
                                     </div>
                                 </div>
+                            <div class="address-card">
+
+                                <!--  -->
+                                
 
                                 <h5 class="section-title">Shipping Address</h5>
                                 <div class="row g-4">
@@ -1265,6 +1279,7 @@
         }
 
         @media (max-width:767px) {
+           
             .cookies_bar p {
                 font-size: 11px;
             }

@@ -24,6 +24,77 @@
 
         /* mystyle  */
 
+        .stepper-wrapper {
+            max-width: 400px;
+            margin: 0 auto 30px;
+            /* center align */
+            justify-content: center;
+
+        }
+
+        /* --- Active Step Styling (Address) --- */
+        .step-text-active {
+            color: #2A5FB0;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .circle-active {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #2A5FB0;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+
+        .circle-inner {
+            width: 12px;
+            height: 12px;
+            background-color: #2A5FB0;
+            border-radius: 50%;
+        }
+
+        /* --- Connecting Line --- */
+        .step-line {
+            flex-grow: 1;
+            /* Makes the line stretch to fill available space */
+            height: 2px;
+            background-color: #707070;
+            margin: 0 0px;
+            /* Spacing between the circle and text */
+        }
+
+        /* --- Inactive Step Styling (Payment) --- */
+        .step-text-inactive {
+            color: #707070;
+            font-weight: 600;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .circle-inactive {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #707070;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+
+        /* ========================================== */
+        @media (max-width: 768px) {
+            .radio-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .step-text-active,
+            .step-text-inactive {
+                font-size: 10px;
+            }
+        }
+
+        /* review order  */
+
         .review-order {
             background: #fff;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -133,6 +204,76 @@
         .small-note {
             font-size: 11px;
             color: #000000 !important;
+        }
+
+        .mobile-checkout-btn {
+            /* bottom: 20px;
+            left: 0; */
+            /* width: 100%;
+            padding: 10px 15px; */
+        }
+
+        .mobile-checkout-btn .btn {
+            border-radius: 6px;
+            padding: 7px 23px;
+            font-size: 14px;
+            margin-top: -12px;
+        }
+
+        @media (max-width: 768px) {
+
+            .review-order {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .address-box {
+                padding: 12px;
+                font-size: 13px;
+            }
+
+            .payment-box {
+                padding: 12px;
+            }
+
+            .payment-box .form-check {
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .payment-box .form-check-label {
+                font-size: 13px;
+                line-height: 1.4;
+            }
+
+            .small-primary {
+                font-size: 12px;
+                margin-left: 25px;
+                /* aligns under radio */
+            }
+
+            .summary-box {
+                padding: 15px;
+                display: none;
+            }
+
+            .summary-box h5 {
+                font-size: 15px;
+            }
+
+            .booked-text span {
+                font-size: 13px;
+            }
+
+            .btn-primary {
+                padding: 10px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -255,6 +396,22 @@
 
     <section>
         <div class="container">
+            <!-- Stepper Component -->
+            <div class="stepper-wrapper d-flex align-items-center">
+
+                <!-- Step 1: Address -->
+                <!-- Address (inactive) -->
+                <div class="step-text-inactive me-2">Address</div>
+                <div class="circle-inactive"></div>
+
+                <div class="step-line"></div>
+
+                <!-- Payment (ACTIVE) -->
+                <div class="step-text-active me-2">Payment</div>
+                <div class="circle-active d-flex justify-content-center align-items-center">
+                    <div class="circle-inner"></div>
+                </div>
+            </div>
             <div class="row">
                 <!-- LEFT SIDE -->
                 <div class="col-lg-8 review-order">
@@ -291,7 +448,7 @@
                     <h5 class="section-title">Payment Method</h5>
 
                     <div class="row g-3">
-                        <div class="col-md-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="payment-box">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="payment">
@@ -305,7 +462,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="payment-box">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="payment">
@@ -372,6 +529,11 @@
                             the buyer has to ascertain the eligibility criteria of input tax credit.
                         </p>
 
+                    </div>
+                    <div class="mobile-checkout-btn d-lg-none">
+                        <button class="btn btn-primary ">
+                            Proceed
+                        </button>
                     </div>
                 </div>
             </div>

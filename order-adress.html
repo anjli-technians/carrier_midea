@@ -365,12 +365,66 @@
             background: #2A5FB0;
         }
 
-        @media (max-width: 768px) {
+       
+        /*  ================= Upper progress line style ========================= */
+        /* Main container styling */
+    .stepper-wrapper {
+      max-width: 400px;  
+    }
+
+    /* --- Active Step Styling (Address) --- */
+    .step-text-active {
+      color: #2A5FB0;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .circle-active {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #2A5FB0;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+
+    .circle-inner {
+      width: 12px;
+      height: 12px;
+      background-color: #2A5FB0;
+      border-radius: 50%;
+    }
+
+    /* --- Connecting Line --- */
+    .step-line {
+      flex-grow: 1; /* Makes the line stretch to fill available space */
+      height: 2px;
+      background-color: #707070;
+      margin: 0 0px; /* Spacing between the circle and text */
+    }
+
+    /* --- Inactive Step Styling (Payment) --- */
+    .step-text-inactive {
+      color: #707070;
+      font-weight: 600;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+
+    .circle-inactive {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #707070;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+        /* ========================================== */
+         @media (max-width: 768px) {
             .radio-group {
                 flex-direction: column;
                 gap: 10px;
             }
-        }
+            .step-text-active, .step-text-inactive{font-size: 10px ;}
+        } 
     </style>
 
 </head>
@@ -514,7 +568,7 @@
                     <div class="row ">
                         <div class="col-lg-10">
                             <!-- Progress Steps -->
-                            <div class="progress-steps mb-4">
+                            <!-- <div class="progress-steps mb-4">
                                 <div class="step active">
                                     <span>Address</span>
                                     <div class="step-circle"></div>
@@ -524,7 +578,26 @@
                                     <span>Payment</span>
                                     <div class="step-circle"></div>
                                 </div>
-                            </div>
+                            </div> -->
+                            <!-- ======================================== -->
+                             <!-- Stepper Component -->
+  <div class="stepper-wrapper d-flex align-items-center">
+    
+    <!-- Step 1: Address -->
+    <div class="step-text-active me-2">Address</div>
+    <div class="circle-active d-flex justify-content-center align-items-center">
+      <div class="circle-inner"></div>
+    </div>
+
+    <!-- Connecting Line -->
+    <div class="step-line"></div>
+
+    <!-- Step 2: Payment -->
+    <div class="step-text-inactive me-2">Payment</div>
+    <div class="circle-inactive"></div>
+
+  </div>
+                            <!-- ======================================== -->
                             <div class="address-card">
                                 <h5 class="section-title">Shipping Address</h5>
                                 <div class="row g-4">

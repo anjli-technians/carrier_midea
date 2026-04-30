@@ -4203,7 +4203,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 .quantity__minus,
 .quantity__plus {
@@ -4211,10 +4211,10 @@ body {
   width: 22px;
   height: 22px;
   margin: 0;
-  background: #dee0ee;
+  background: #fff;
   text-decoration: none;
   text-align: center;
-  line-height: 23px;border: 1px solid #000;
+  line-height: 23px;border: 1px solid #0000007d;
 }
 .quantity__minus:hover,
 .quantity__plus:hover {
@@ -4230,6 +4230,7 @@ body {
 .quantity__input {
   width: 32px;
   height: 22px;
+  border-radius: 5px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -4251,7 +4252,53 @@ body {
 .deliver_text{font-size: 11px;
     color: #7A7A7A;
     font-weight: 400;}
+     /* Coupon Container Styling */
+  .add-to-cart-inner  .coupon-container {
+      background-color: #F6F6F6;
+      padding: 6px;
+      border-radius:10px; 
+      margin-bottom: 10px;
+    }
+
+    /* Input Field Styling */
+  .add-to-cart-inner  .coupon-input {
+      font-size: 12px;
+    padding: 5px 10px !important;
+    }
+
+   .add-to-cart-inner .coupon-input::placeholder {
+      color: #8c8c8c;
+      font-weight: 400;
+    }
+
+    /* Button Styling */
+  .add-to-cart-inner  .btn-apply {
+      background-color: #2A5FB0; 
+      color: white;
+          padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 400;
+      transition: background-color 0.2s ease;
+    }
+
+   .add-to-cart-inner .btn-apply:hover {
+      background-color: #2A5FB0;
+      color: white;
+    }
+
+  .add-to-cart-inner  .main-cart-heading{    gap: 5px;margin-bottom: 20px;}
+    /* Heading Text Style */
+   .add-to-cart-inner .cart-heading {
+      font-size: 15px;
+      font-weight: 500;
+      color: #000;
+      letter-spacing: -0.3px;
+    }
     .add_to_cart{border: 1px solid #DDDDDD;background: #FCFCFC;border-radius: 10px;display: flex;align-items: center;}
+    .add_to_cart {padding: 15px 10px !important; align-items: flex-start;}
+    .dustbin-img{align-items: center;
+    justify-content: space-between;}
+    .main-price ,.right-content-cart {width: 100%;}
     .add_to_cart img{width: 300px;}
     .add_to_cart h3{font-size: 20px; font-weight: 600;}
     .add_to_cart .product-price{color: #2A5FB0;
@@ -4286,8 +4333,31 @@ body {
         }
         
         
-        @media (max-width:767px){
-          .add_to_cart{flex-direction: column;} 
+        @media (max-width:767px){ 
+          .add-to-cart-inner .main-cart-heading{margin-bottom: 10px;}
+          .add-to-cart-inner .cart-heading{font-size: 12px;}
+          .add-to-cart-inner .coupon-container{width: 90%;}
+          .right-content-cart{width: 100%;}
+          .main-price{width: 100%;}  
+          .dustbin-img{align-items: center; justify-content: space-between;}
+          .delivery_instruction input{font-size: 10px; margin: 5px 0 5px;}
+          .drop_example{font-size: 9px; margin-bottom: unset;}
+          .delivery_instruction h4{font-size: 10px;}
+          .delivery_instruction{padding: 10px 20px;}
+          .deliver_text{font-size: 10px;}
+          .add_to_cart .product-price{font-size: 18px;}
+          .add_to_cart .tax{font-size: 8px;}
+          .add_to_cart .saved_amount{font-size: 10px;}
+          .add_to_cart img,.add_to_cart h3{margin-bottom: unset !important;}
+          .quantity__minus, .quantity__plus{width: 18px; height: 18px; line-height: 18px; background-color: #fff; color: #0000007d; }
+          .quantity__input{        width: 30px;
+        height: 18px;
+        border-radius: 5px;
+        font-size: 12px;}
+          .add_to_cart .quantity{padding: 5px 0;}
+          .add_to_cart .cart-quantity{  display: flex;
+    flex-direction: column;}
+          .add_to_cart{align-items: flex-start ;padding: 15px;} 
           .add_to_cart img{width: 100px; margin-bottom: 10px;}
           .add_to_cart h3{font-size: 15px;}
           .product-details .gold-warranty-box{margin-bottom: 20px;}

@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <style>
         section{padding: 60px 0;}
+        .add-to-cart-inner{padding-bottom: 0;}
         @media (max-width: 767px) {
             section{padding: 30px 0;}
+            .add-to-cart-inner .container .row{gap: 10px;}
+            .get-support-btn{border-radius: 50px !important;}
         }
     </style>
 </head>
@@ -130,18 +133,38 @@
             </div>
         </div>
     </nav> 
+<style>
+     
 
+    /* ======================================== */
+   
+</style>
 
-    <section>
+    <section class="add-to-cart-inner">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
-                    <div class="add_to_cart">
+                <div class="col-md-8">
+                    <!-- Header with Icon and Text -->
+    <div class="d-flex align-items-center main-cart-heading">
+      <!-- SVG Shopping Bag Icon -->
+     <img src="./images/bag.png" alt="bag">
+      <h2 class="mb-0 cart-heading">My Cart(1 item)</h2>
+    </div>
+                    
+    <!-- Coupon Input Bar -->
+    <div class="coupon-container d-flex  d-md-none d-flex">
+      <input type="text" class="form-control coupon-input bg-transparent border-0 shadow-none px-3" placeholder="Enter your coupon code">
+      <button class="btn btn-apply  ">Apply</button>
+    </div>
+                    <div class="add_to_cart d-flex gap-2">
                         <div class="d-flex">
                             <img src="public/ac1.png" alt="img" class="img-fluid">
-                            <h3 class="d-block d-md-none">Carrier 1.5 Ton 3 Star Wi-Fi <br>Smart Flexicool Inverter Split AC</h3>
+                           
                         </div>
-                        <div>
+
+                        <div class="right-content-cart">
+                             <h3 class="d-block d-md-none">Carrier 1.5 Ton 3 Star Wi-Fi <br>Smart Flexicool Inverter Split AC</h3>
+                        <div class="cart-quantity">
                             <h3 class="d-none d-md-block">Carrier 1.5 Ton 3 Star Wi-Fi <br>Smart Flexicool Inverter Split AC</h3>
                             <div class="quantity">
                                 <a href="#" class="quantity__minus"><span>-</span></a>
@@ -150,20 +173,35 @@
                             </div>
                             <span class="deliver_text">Free Delivery within 2-4 working days</span>
                         </div>
-                        <div>
-                            <div class="main-price d-none d-md-block">
+                        <div class="d-flex justify-content-between align-items-end mt-2">
+                            <div class="main-price  ">
                                 <span class="product-price">₹ 37,271</span>
                                 <span class="text-decoration-line-through cut-price mx-2">₹ 53,690</span> 
                                 <div class="tax" >(Inclusive of all taxes)</div>
-                                <div class="saved_amount">
-                                    You saved ₹ 15,010
-                                </div>
+                               <div class="d-flex dustbin-img">
+                                 <div class="saved_amount">You saved ₹ 15,010</div>
+                                 <!-- Dustbin / Trash Icon -->
+        <button class="btn p-0 border-0 text-secondary" aria-label="Delete item">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+              <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+            </svg> -->
+            <img src="./images/dustbin.png" alt="dustbin" style="width: 18px;">
+        </button>
+                               </div>
                             </div>
 
+                           
+
+                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
+                     <!-- Coupon Input Bar -->
+    <div class="coupon-container d-flex  d-md-flex d-none">
+      <input type="text" class="form-control coupon-input bg-transparent border-0 shadow-none px-3" placeholder="Enter your coupon code">
+      <button class="btn btn-apply  ">Apply</button>
+    </div>
                     <div class="delivery_instruction">
                         <div class="d-flex align-items-center"><img src="public/message.png" alt="img" class="img-fluid"><h4 class="mb-0">Delivery Instructions</h4></div>
                         <span class="note">Add a note to your order (optional)</span>

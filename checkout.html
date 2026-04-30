@@ -24,22 +24,32 @@
 
         /* mystyle  */
 
+        .review-order {
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            padding: 30px;
+        }
+
         .card-custom {
             border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
             padding: 20px;
             background: #fff;
         }
 
         .section-title {
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: 700;
             margin-bottom: 20px;
-            border-bottom: 2px solid #ddd;
+            border-bottom: 1px solid #000;
             padding-bottom: 10px;
         }
 
         .address-box {
-            background: #f0f3f7;
+            background: #F5F7FD;
+            border: 1px solid #D0D0D0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
             border-radius: 8px;
             padding: 15px;
             height: 100%;
@@ -47,15 +57,33 @@
 
         .text-primary {
             color: #2A5FB0 !important;
-            font-size: 13px;
+            font-size: 14px;
+        }
+
+        .text-secondary {
+            color: #000000 !important;
+            font-size: 12px;
+        }
+
+        .form-check-label {
+            color: #2A5FB0 !important;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .small-primary {
+            color: #000000 !important;
+            margin-left: 23px;
+            font-size: 12px;
         }
 
         .payment-box {
-            background: #f0f3f7;
+            background: #F5F7FD;
+            border: 1px solid #D0D0D0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
             border-radius: 8px;
             padding: 15px;
             cursor: pointer;
-            transition: 0.3s;
         }
 
         .payment-box:hover {
@@ -67,10 +95,28 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+        }
+
+        .summary-box h5 {
+            font-size: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #000;
+            font-weight: 600;
+        }
+
+        .summary-box .booked {
+            background-color: #F6F6F6;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .summary-box .booked-text span {
+            font-weight: 600;
         }
 
         .text-danger {
-            color: #e53935 !important;
+            color: #FF0000 !important;
         }
 
         .btn-primary {
@@ -85,8 +131,8 @@
         }
 
         .small-note {
-            font-size: 12px;
-            color: #777;
+            font-size: 11px;
+            color: #000000 !important;
         }
     </style>
 </head>
@@ -210,128 +256,123 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="row">
+                <!-- LEFT SIDE -->
+                <div class="col-lg-8 review-order">
+                    <h4 class="section-title">Review Order</h4>
 
-                    <!-- LEFT SIDE -->
-                    <div class="col-lg-8">
-
-                        <h4 class="section-title">Review Order</h4>
-
-                        <div class="row g-3 mb-4">
-                            <div class="col-md-6">
-                                <div class="address-box">
-                                    <h6 class="text-primary">Billing Address:</h6>
-                                    <p class="mb-0">
-                                        Mahtab Alam<br>
-                                        sector 47 | SECTOR-II, GURUGRAM<br>
-                                        Gurugram 122001<br>
-                                        IN<br>
-                                        9898989898
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="address-box">
-                                    <h6 class="text-primary">Ship To:</h6>
-                                    <p class="mb-0">
-                                        Mahtab Alam<br>
-                                        sector 47 | SECTOR-II, GURUGRAM<br>
-                                        Gurugram 122001<br>
-                                        IN<br>
-                                        9898989898
-                                    </p>
-                                </div>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <div class="address-box">
+                                <h6 class="text-primary">Billing Address:</h6>
+                                <p class="mb-0 text-secondary">
+                                    Mahtab Alam<br>
+                                    sector 47 | SECTOR-II, GURUGRAM<br>
+                                    Gurugram 122001<br>
+                                    IN<br>
+                                    9898989898
+                                </p>
                             </div>
                         </div>
 
-                        <h5 class="section-title">Payment Method</h5>
-
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="payment-box">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="payment">
-                                        <label class="form-check-label fw-semibold">
-                                            Pay Via Razorpay
-                                        </label>
-                                    </div>
-                                    <p class="mb-0 small">
-                                        Using any Credit/Debit Card, Net Banking, UPI or Wallet.
-                                    </p>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="address-box">
+                                <h6 class="text-primary">Ship To:</h6>
+                                <p class="mb-0 text-secondary">
+                                    Mahtab Alam<br>
+                                    sector 47 | SECTOR-II, GURUGRAM<br>
+                                    Gurugram 122001<br>
+                                    IN<br>
+                                    9898989898
+                                </p>
                             </div>
-
-                            <div class="col-md-6">
-                                <div class="payment-box">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="payment">
-                                        <label class="form-check-label fw-semibold">
-                                            No Cost EMI via Pinelabs
-                                        </label>
-                                    </div>
-                                    <p class="mb-0 small">
-                                        Avail Cashback and No Cost EMI using Credit/Debit Cards.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- RIGHT SIDE -->
-                    <div class="col-lg-4 mt-4 mt-lg-0">
-                        <div class="summary-box">
-                            <h5 class="mb-3">Order Summary</h5>
-
-                            <div class="bg-light p-2 rounded mb-3">
-                                1 Item in Cart
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Subtotal (1 items)</span>
-                                <span>₹53,690.00</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Corporate Discount</span>
-                                <span class="text-danger">-₹1,000.00</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>Bank Discount</span>
-                                <span class="text-danger">-₹15,419.00</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-2">
-                                <span>GST</span>
-                                <span>—</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-3">
-                                <span>Shipping</span>
-                                <span>₹0.00</span>
-                            </div>
-
-                            <hr>
-
-                            <div class="d-flex justify-content-between fw-bold mb-3">
-                                <span>TOTAL</span>
-                                <span>₹37,371.00</span>
-                            </div>
-
-                            <button class="btn btn-primary w-100">
-                                Proceed to Checkout
-                            </button>
-
-                            <p class="small-note mt-3">
-                                *For the final GST amount, please refer to the Tax Invoice. For GSTIN purchases,
-                                the buyer has to ascertain the eligibility criteria of input tax credit.
-                            </p>
-
                         </div>
                     </div>
 
+                    <h5 class="section-title">Payment Method</h5>
+
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="payment-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="payment">
+                                    <label class="form-check-label ">
+                                        Pay Via Razorpay
+                                    </label>
+                                </div>
+                                <p class="mb-0 small-primary">
+                                    Using any Credit/Debit Card, Net Banking, UPI or Wallet.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="payment-box">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="payment">
+                                    <label class="form-check-label ">
+                                        No Cost EMI via Pinelabs
+                                    </label>
+                                </div>
+                                <p class="mb-0 small-primary">
+                                    Avail Cashback and No Cost EMI using Credit/Debit Cards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="summary-box">
+                        <h5 class="mb-3">Order Summary</h5>
+
+                        <div class="booked p-2 rounded mb-3">
+                            1 Item in Cart
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2 booked-text">
+                            <span>Subtotal (1 items)</span>
+                            <span>₹53,690.00</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2 booked-text">
+                            <span>Corporate Discount</span>
+                            <span class="text-danger">-₹1,000.00</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2 booked-text">
+                            <span>Bank Discount</span>
+                            <span class="text-danger">-₹15,419.00</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2 booked-text">
+                            <span>GST</span>
+                            <span>—</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-3 booked-text">
+                            <span>Shipping</span>
+                            <span>₹0.00</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="d-flex justify-content-between fw-bold mb-3">
+                            <span>TOTAL</span>
+                            <span>₹37,371.00</span>
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Proceed to Checkout
+                        </button>
+
+                        <p class="small-note mt-3">
+                            *For the final GST amount, please refer to the Tax Invoice. For GSTIN purchases,
+                            the buyer has to ascertain the eligibility criteria of input tax credit.
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </div>

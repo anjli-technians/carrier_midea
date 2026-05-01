@@ -22,24 +22,61 @@
             }
         }
 
+        /* ============================================= */
+        /* 1. Reset the whole input to remove any hidden framework borders */
+.classic-file-input {
+  font-size: 14px;
+  color: #333;
+  border: none !important; /* Forces removal of any box borders */
+  background: transparent;
+  padding: 0;
+  outline: none;
+}
+
+/* 2. Style ONLY the "Choose File" button inside the input */
+.classic-file-input::file-selector-button {
+  padding: 1px 8px;
+  margin-right: 10px;
+  background-color: #e5e5e5;
+  border: 1px solid #767676;
+  border-radius: 3px;
+  color: #000;
+  cursor: pointer;
+  font-size: 11px;
+  transition: background-color 0.2s ease;
+}
+
+/* 3. Add a slight hover effect to the Choose File button */
+.classic-file-input::file-selector-button:hover {
+  background-color: #d5d5d5;
+}
+
+/* Optional: Basic styling for your main Upload button so it looks clean */
+
+    
+        /* ============================================= */
+
+        .address_detail h3{font-size: 19px;}
+
         /* my profile */
         .section-header {
             background-color: #F7F7F7;
             padding: 10px 15px;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 13px;
             border-radius: 4px;
             margin-bottom: 15px;
         }
+        .profile-img-section{padding-bottom: 0;}
 
         .section-content h6 {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
 
         }
 
         .section-content p {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 500;
             margin-bottom: 10px;
             color: #6D6D6D;
@@ -92,7 +129,7 @@
             border: none;
             padding: 7px 20px;
             border-radius: 5px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 200;
         }
 
@@ -102,15 +139,19 @@
 
         .edit-link {
             color: #2A5FB0;
-            text-decoration: none;
-            font-size: 14px;
+            font-size: 12px;
         }
 
         .edit-link:hover {
             text-decoration: underline;
         }
-
+ 
         @media (max-width: 767px) {
+            .classic-file-input{padding: 0 !important;}
+            .upload-section{align-items: flex-start; text-align: left; width: 80%;}
+            .profile-wrapper{display: flex !important; flex-direction: row !important;}
+            .address_detail h3{padding: unset;}
+            .section-content{margin-bottom: 20px;}
 
             .profile-img {
                 width: 90px;
@@ -248,20 +289,20 @@
         </div>
     </nav>
 
-    <section>
+    <section class="profile-img-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <div class="dashboard_list">
                         <div class="dashboard_selected">
-                            <span class="selected_text">Address Book</span>
+                            <span class="selected_text">My Account</span>
                             <span class="arrow"></span>
                         </div>
                         <ul class="dashboard_menu">
-                            <li><a href="#">My Account</a></li>
+                            <li><a href="#" class="active">My Account</a></li>
                             <li><a href="#">Order History</a></li>
                             <li><a href="#">Wishlist</a></li>
-                            <li><a href="#" class="active">Address Book</a></li>
+                            <li><a href="#" >Address Book</a></li>
                             <li><a href="#">Logout</a></li>
                         </ul>
                     </div>
@@ -270,10 +311,10 @@
                     <div class="container address_detail">
                         <div class="row">
 
-                            <h3>My Profile</h3>
+                            <h3>My Account</h3>
 
                             <div class="section-header">Profile Picture </div>
-                            <div class="d-flex align-items-center gap-3 mb-4 profile-wrapper">
+                            <!-- <div class="d-flex align-items-center gap-3 mb-4 profile-wrapper">
                                 <div class="col-md-2 text-center">
                                     <div class="profile-img">
                                         <img src="./public/account 1.png" alt="profile" srcset="">
@@ -282,15 +323,43 @@
                                 <div class="col-md-10 upload-section">
                                     <h6>Upload New Profile Picture</h6>
                                     <div class="d-flex align-items-center gap-2 mb-2">
-                                        <input type="file" class="form-control w-auto">
+                                        <input type="file" class="classic-file-input w-auto">
                                     </div>
                                     <button class="upload-btn">Upload</button>
                                 </div>
-                            </div>
+                            </div> -->
+                            <!-- Added flex-column for mobile, flex-md-row for desktop -->
+<div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start gap-3 mb-4 profile-wrapper">
+    
+    <!-- Removed col-md-2, the flexbox will handle sizing naturally -->
+    <div class="profile-img">
+        <!-- Added img-fluid so the image scales down on tiny screens -->
+        <img src="./public/account 1.png" alt="profile" class="img-fluid" srcset="">
+    </div>
+    
+    <!-- Removed col-md-10 -->
+    <div class="upload-section">
+        <h6>Upload New Profile Picture</h6>
+        <!-- Centered on mobile, left-aligned on desktop -->
+        <div class="d-flex justify-content-left justify-content-md-start align-items-center gap-2 mb-3">
+            <input type="file" class="classic-file-input w-auto">
+        </div>
+        <button class="upload-btn">Upload</button>
+    </div>
+</div>
 
                             <!-- Account Information -->
                             <div class="section-header">Account Information</div>
-                            <div class="p-3 bg-white rounded shadow-sm section-content">
+                            <div class="bg-white section-content d-md-none d-block">
+                                 <h6>Contact Information</h6>
+                                <p class="mb-1">Mahtab Alam</p>
+                                <p class="mb-1">Example@gmail.com</p>
+                                <p class="mb-1">GST : 96452415521552</p>
+                                <p class="mb-1">PAN : 958455521552</p>
+                                <a href="#" class="edit-link">Edit</a>
+                            </div>
+
+                            <div class="p-3 bg-white  section-content">
                                 <h6>Contact Information</h6>
                                 <p class="mb-1">+91 98989 98989</p>
                                 <p class="mb-1">Example@gmail.com</p>
@@ -715,6 +784,8 @@
         }
 
         @media (max-width:767px) {
+            .section-content{padding: unset !important; }
+            .section-header{padding: 10px 0px;}
             .cookies_bar p {
                 font-size: 11px;
             }

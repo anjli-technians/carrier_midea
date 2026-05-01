@@ -355,10 +355,24 @@
      <section class="order-tracking">
         <div class="container">
 
-            <div class="d-flex justify-content-between align-items-center pb-2 d-md-none d-block">
+             <div class="dashboard_list d-md-none d-block">
+                        <div class="dashboard_selected">
+                            <span class="selected_text track-heading-main">Order Tracking</span>
+                            <span class="arrow">❯</span>
+                        </div>
+                        <ul class="dashboard_menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <!-- <li><a href="#" class="active">Order Tracking</a></li> -->
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#" >Address Book</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+            <!-- <div class="d-flex justify-content-between align-items-center pb-2 d-md-none d-block">
       <h4 class="track-heading-main mb-0">Order Tracking</h4>
        <span>></span>
-    </div>
+    </div> -->
     
     <!-- Header Section -->
     <div class="main-heading d-flex justify-content-between align-items-center pb-4">
@@ -965,6 +979,28 @@
       input.value = newVal < 10 ? '0' + newVal : newVal;
     }
   </script>
+
+  <script>
+    const selected = document.querySelector('.dashboard_selected');
+    const menu = document.querySelector('.dashboard_list');
+    const selectedText = document.querySelector('.selected_text');
+
+    selected.addEventListener('click', () => {
+        menu.classList.toggle('open');
+    });
+
+    // Update selected text on click
+    document.querySelectorAll('.dashboard_menu a').forEach(item => {
+        item.addEventListener('click', function () {
+            document.querySelectorAll('.dashboard_menu a').forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
+
+            selectedText.textContent = this.textContent;
+
+            menu.classList.remove('open');
+        });
+    });
+</script>
  
 </body>
 

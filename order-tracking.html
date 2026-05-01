@@ -20,6 +20,9 @@
             .get-support-btn{border-radius: 50px !important;}
         }
 
+
+
+        
         /* ====================================================== */
  
     .stepper-wrapper {
@@ -37,16 +40,16 @@
     right: 13%;
     height: 2px;
     background-color: #2A5FB0;
-    z-index: 5;
+    z-index: 1;
     }
     .stepper-item {
       position: relative;
-      z-index: 2;
+      /* z-index: 2; */
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 25%; /* 4 steps = 25% each */
-      background: #fff; /* cover the line behind it */
+      background: transparent; /* cover the line behind it */
     }
     .step-circle {
       width: 32px;
@@ -56,9 +59,12 @@
       align-items: center;
       justify-content: center;
       font-weight: bold;
-      font-size: 0.9rem;
+      font-size: 18px;
+    font-weight: 600;
       margin-bottom: 0.5rem;
-      background-color: #fff;
+      background-color: #fff; /* This ensures the line doesn't show inside the circle */
+  position: relative;
+  z-index: 2; 
     }
     /* Active Steps (1 & 2) */
     .stepper-item.active .step-circle {
@@ -69,21 +75,29 @@
     .stepper-item.active .step-title {
       color: #2A5FB0;
       font-weight: 600;
+          margin-top: 0 !important;
+    font-size: 13px;
     }
     .stepper-item.active .step-date {
       color: #2A5FB0;
+      font-size: 13px;
+      font-weight: 500;
     }
     /* Inactive Steps (3 & 4) */
     .stepper-item.inactive .step-circle {
       border: 2px solid #2A5FB0;
       color: #2A5FB0;
+      background-color: #fff;
     }
     .stepper-item.inactive .step-title {
-      color: #555;
-      font-weight: 500;
+      color: #606060;
+      font-weight: 600;
+      font-size: 13px;
     }
     .stepper-item.inactive .step-date {
-      color: #8e95a5;
+      color: #606060;
+      font-size: 13px;
+      font-weight: 500;
     }
 
     /* Items Table Design */
@@ -122,13 +136,13 @@
     .qty-btn {
       background: none;
       border: none;
-      font-size: 1.2rem;
-      color: #4b5563;
-      padding: 0 15px;
+         font-size: 25px;
+    color: #000;
+    padding: 0 20px;
       cursor: pointer;
     }
    .order-tracking .qty-input {
-          width: 39px;
+          width: 45px;
     text-align: center;
     border: none;
     font-weight: 600;
@@ -136,7 +150,7 @@
     outline: none;
     border: 1px solid #C5C5C5;
     border-radius: 50%;
-    padding: 7px;
+    padding: 10px;
     }
 
     /* Remove Cross Button */
@@ -152,23 +166,22 @@
     /* Bottom Cards */
     .bottom-card {
       background: #fff;
-      border: 1px solid #eef0f4;
-      border-radius: 0.75rem;
-      padding: 1.5rem;
-      height: 100%;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+      border: 1px solid #EBEBEB;
+      border-radius: 8px;
+      padding: 25px 20px;
+      height: 100%; 
+      box-shadow: 0px 4px 30px 0px #00000040;
+
     }
     .visa-badge {
-      font-size: 0.7rem;
-      background: #1a1f71;
-      color: white;
-      padding: 0.1rem 0.4rem;
-      border-radius: 0.2rem;
+      font-size: 0.7rem; 
+      color: #172B85;
+      color: white; 
       font-weight: bold;
     }
 
     /* ======= Custom-style ========= */
-   .order-tracking .track-heading{font-size: 19px; font-weight: 600;}
+   .order-tracking .track-heading{font-size: 19px; font-weight: 600; color: #000;}
    .order-tracking .main-heading {border-bottom: 1px solid #E2E2E2;}
    .order-tracking .order-data{padding-top: 20px; width: 70%;}
    .order-tracking .invoice{background-color: #2A5FB0; color: #fff; font-size: 13px; font-weight: 400; padding: 10px 15px;}
@@ -176,10 +189,52 @@
    .order-tracking .order-data-heading{ font-size: 13px;font-weight: 500;color: #939393;}
    .order-tracking .order-data-content{ font-size: 14px;font-weight: 600;color: #000;}
    .order-tracking .track-heading-right{    font-size: 18px;font-weight: 600 ; color: #344054 ;}
-   .order-tracking .tracking-card { background: #fff; border: 1px solid #CCCCCC;border-radius: 10px; padding: 15px;box-shadow: 0px 4px 30px 0px #00000040;}
+   .order-tracking .tracking-card { background: #fff; border: 1px solid #CCCCCC;border-radius: 10px; padding: 20px 10px;box-shadow: 0px 4px 30px 0px #00000040;}
     .order-tracking .items-header-row div{font-size: 14px; font-weight: 300;}
-    
-    
+    .order-tracking .order-id{color:#344054; font-size: 14px;     font-weight: 600;}
+    .order-tracking .delivery-heading{font-size: 14px; font-weight: 700;}
+    .order-tracking .delivery-address{font-size: 13px; color: #667085; font-weight: 500;}
+    .order-tracking .delivery-payment{font-size: 14px; font-weight: 700;}
+    .order-tracking .delivery-visa span{font-size: 14px; font-weight: 400; color: #667085;}
+    .order-tracking .delivery-visa span img{width: 30px;}
+    .order-tracking .total-text span{font-size: 14px;     font-weight: 500; padding-bottom: 8px;}
+    .order-tracking .total-text-final span{font-size: 14px; font-weight: 700; margin-top: 20px;}
+    .order-tracking .product-row .col-4{display: flex; gap: 100px;}
+
+
+
+    @media (max-width:767px){
+        .order-tracking .track-heading{font-size: 14px;}
+        .order-tracking .invoice{font-size: 10px;font-weight: 400;padding: 7px 10px;}
+        .order-tracking .order-data{width: 100%; text-wrap: nowrap;display: flex; align-items: center;justify-content: flex-start; margin-bottom: 10px !important; padding-top: 10px ;}
+        .order-tracking .order-data .col{margin-bottom: 15px;}
+        .order-tracking .order-data-content{font-size: 12px;}
+        .order-tracking .order-data-heading{font-size: 11px; font-weight: 400;}
+        .order-tracking hr.text-muted {margin-top: 10px; margin-bottom: 10px !important;}
+        .order-tracking .track-heading-right{font-size: 12px;}
+        .order-tracking .tracking-card{box-shadow: unset; padding: 20px 10px; margin-bottom: 20px !important;}
+        .order-tracking .step-circle{width: 25px; height: 25px; font-size: 14px; font-weight: 500;}
+        .stepper-item.active .step-title,.stepper-item.active .step-date,.stepper-item.inactive .step-title,.stepper-item.inactive .step-date{font-size: 10px;}
+        .order-tracking .stepper-wrapper::before{top: 11px;}
+        .order-tracking .items-header-row{display: none;}
+        .order-tracking .product-row{box-shadow: 0px 4px 15px 0px #00000040; border-radius: 10px; margin-bottom: 20px !important; position: relative;}
+        .order-tracking .product-row .col-8{flex-direction: column;         align-items: flex-start !important;}
+        .qty-btn{padding: 0 7px; font-size: 20px;}
+        .order-tracking .qty-input{width: 35px; padding: 4px;}
+        /* .order-tracking .btn-remove{display: none;} */
+        .order-tracking .product-img-wrapper{    justify-content: flex-start; padding: 0;}
+        .order-tracking .product-img-wrapper img{width: 150px;}
+        .order-tracking .order-id{font-size: 11px;}
+        .order-tracking .product-row .col-4{display: flex ; flex-direction: column; gap: 20px;}
+        .order-tracking .delivery-address{font-size: 11px;}
+        .order-tracking .delivery-payment{font-weight: 500;}
+        .order-tracking .total-text span{font-size: 12px;}
+        .total-text-final{border-top: 1px solid #E2E2E2 ;}
+        .track-heading-main{font-size: 15px;
+        font-weight: 400;}
+        .stepper-item{text-align: center;}
+        .btn-remove {position: absolute;top: 0px;right: 5px;background: transparent;z-index: 10;}
+    }
     </style>
 </head>
 
@@ -299,6 +354,11 @@
     <!-- ============================================== -->
      <section class="order-tracking">
         <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center pb-2 d-md-none d-block">
+      <h4 class="track-heading-main mb-0">Order Tracking</h4>
+       <span>></span>
+    </div>
     
     <!-- Header Section -->
     <div class="main-heading d-flex justify-content-between align-items-center pb-4">
@@ -345,28 +405,28 @@
         <!-- Step 1 (Active) -->
         <div class="stepper-item active">
           <div class="step-circle">1</div>
-          <div class="step-title text-sm mt-2">Order Placed</div>
+          <div class="step-title text-sm">Order Placed</div>
           <div class="step-date text-xs mt-1">March 10th, 2026</div>
         </div>
 
         <!-- Step 2 (Active) -->
         <div class="stepper-item active">
           <div class="step-circle">2</div>
-          <div class="step-title text-sm mt-2">In Transit</div>
+          <div class="step-title text-sm ">In Transit</div>
           <div class="step-date text-xs mt-1">March 12th, 2026</div>
         </div>
 
         <!-- Step 3 (Inactive) -->
         <div class="stepper-item inactive">
           <div class="step-circle bg-white">3</div>
-          <div class="step-title text-sm mt-2">Out for Delivery</div>
+          <div class="step-title text-sm">Out for Delivery</div>
           <div class="step-date text-xs mt-1">March 20th, 2026</div>
         </div>
 
         <!-- Step 4 (Inactive) -->
         <div class="stepper-item inactive">
           <div class="step-circle bg-white">4</div>
-          <div class="step-title text-sm mt-2">Delivered</div>
+          <div class="step-title text-sm ">Delivered</div>
           <div class="step-date text-xs mt-1">March 20th, 2026</div>
         </div>
 
@@ -393,10 +453,11 @@
         </div>
         <div>
           <div class="track-heading mb-1">ESTER EDGE FXi (Wi-Fi) 3 Star Split Inverter</div>
-          <div class="text-xs fw-semibold text-secondary">Order ID: #2315482546</div>
+          <div class="order-id">Order ID: #2315482546</div>
         </div>
       </div>
       
+      <div class="col-4">
       <!-- Quantity Selector -->
       <div class="col-2 text-center">
         <div class="qty-selector">
@@ -411,55 +472,56 @@
         <div class="track-heading  ">₹37,371.00</div>
         <button class="btn-remove">&times;</button>
       </div>
+      </div>
     </div>
 
     <!-- Bottom Section: Address, Payment, and Summary Grid -->
     <div class="row g-4">
       
       <!-- Left Column (Address & Payment) -->
-      <div class="col-md-7">
+      <div class="col-md-8">
         <div class="bottom-card">
           <!-- Address -->
           <div class="mb-4">
-            <h6 class="fw-bold mb-2">Delivery Address</h6>
-            <p class="text-sm text-secondary mb-0">847 Jewess Bridge Apt. 174 Gurgaon, Haryana - 122008 ph - 974-769-3919</p>
+            <h6 class="delivery-heading mb-2">Delivery Address</h6>
+            <p class="delivery-address mb-0">847 Jewess Bridge Apt. 174 Gurgaon, Haryana - 122008 ph - 974-769-3919</p>
           </div>
           
-          <hr class="text-muted opacity-25">
+          <hr class="text-muted opacity-25 d-md-block d-none">
           
           <!-- Payment -->
           <div class="mt-4 d-flex align-items-center gap-4">
-            <h6 class="fw-bold mb-0">Payment</h6>
-            <div class="d-flex align-items-center gap-2 text-sm text-secondary">
+            <h6 class="delivery-payment mb-0">Payment</h6>
+            <div class="d-flex align-items-center gap-2 delivery-visa">
               <span>Visa **56</span>
-              <span class="visa-badge">VISA</span>
+              <span class="visa-badge">  <img src="./images/visa-logo.png" alt="visa"></span>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Right Column (Order Summary) -->
-      <div class="col-md-5">
+      <div class="col-md-4">
         <div class="bottom-card d-flex flex-column justify-content-center">
           
-          <div class="d-flex justify-content-between text-sm fw-medium mb-3">
+          <div class="d-flex justify-content-between total-text ">
             <span>Subtotal (1 items)</span>
             <span>₹53,690.00</span>
           </div>
           
-          <div class="d-flex justify-content-between text-sm fw-medium mb-3">
+          <div class="d-flex justify-content-between total-text ">
             <span>GST</span>
             <span>₹100.00</span>
           </div>
           
-          <div class="d-flex justify-content-between text-sm fw-medium mb-4">
+          <div class="d-flex justify-content-between total-text ">
             <span>Shipping</span>
             <span>₹0.00</span>
           </div>
           
-          <hr class="text-muted opacity-25 mb-3">
+          <!-- <hr class="text-muted opacity-25 "> -->
           
-          <div class="d-flex justify-content-between fw-bold text-dark">
+          <div class="d-flex justify-content-between  total-text-final">
             <span>TOTAL</span>
             <span>₹37,371.00</span>
           </div>

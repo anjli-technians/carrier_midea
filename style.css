@@ -4446,7 +4446,7 @@ body {
       cursor: pointer;
     }
    .order-tracking .qty-input {
-          width: 45px;
+          width: 45px;height: 45px;
     text-align: center;
     border: none;
     font-weight: 600;
@@ -4454,7 +4454,7 @@ body {
     outline: none;
     border: 1px solid #C5C5C5;
     border-radius: 50%;
-    padding: 10px;
+    padding: 10px;font-size: 20px;
     }
 
     /* Remove Cross Button */
@@ -4951,13 +4951,14 @@ body {
         .order-tracking .product-row{box-shadow: 0px 4px 15px 0px #00000040; border-radius: 10px; margin-bottom: 20px !important; position: relative;}
         .order-tracking .product-row .col-8{flex-direction: column;         align-items: flex-start !important;}
         .order-tracking .qty-btn{padding: 0 7px; font-size: 20px;}
-        .order-tracking .qty-input{width: 35px; padding: 4px;}
+        .order-tracking .qty-input{width: 35px;height: 35px; padding: 4px;font-size: 14px;}
         /* .order-tracking .btn-remove{display: none;} */
         .order-tracking .product-img-wrapper{    justify-content: flex-start; padding: 0;}
         .order-tracking .product-img-wrapper img{width: 150px;}
-        .order-tracking .order-id{font-size: 11px;}
+        .order-tracking .order-id{font-size: 12px;}
         .order-tracking .product-row .col-4{display: flex ; flex-direction: column; gap: 20px;}
-        .order-tracking .delivery-address{font-size: 11px;}
+        .order-tracking .delivery-address{font-size: 12px;line-height: 20px;font-weight: 500;}
+        .help-header{margin-bottom: 0px;}
         .order-tracking .delivery-payment{font-weight: 500;}
         .order-tracking .total-text span{font-size: 12px;}
         .order-tracking .total-text-final{border-top: 1px solid #E2E2E2 ;}

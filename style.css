@@ -4925,6 +4925,7 @@ body {
           .profile-img-section  .profile-wrapper{display: flex !important; flex-direction: row !important;}
           .profile-img-section  .address_detail h3{padding: unset;}
           .profile-img-section  .section-content{margin-bottom: 20px;}
+          .profile-img-section .section-content h6{font-size: 13px; font-weight: 700;}
 
           .profile-img-section  .profile-img { width: 90px; height: 90px;}
           .profile-img-section  .file-input { max-width: 100%;}

@@ -16,7 +16,7 @@
   <style>
     /* Full screen dark background */
     body {
-      background-color: #000;
+      background-color: #fff;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -31,6 +31,7 @@
       padding: 3rem 2rem;
       border-radius: 1rem;
       position: relative;
+      border: 1px solid #D5D5D5;
     }
 
     /* Red Close Button */
@@ -167,13 +168,14 @@
     }
 
     @media (max-width:767px){
-        .login-card{max-width: 250px;
-    padding: 1rem 1rem;
+      .social-icons-wrapper{margin-bottom: 10px;}
+        .login-card{max-width: 300px;
+    padding: 1.5rem 1rem;
     border-radius: 1rem;}
-    .title-text{font-size: 15px;}
-    .sub-text{font-size: 10px;}
-    .btn-close-custom{top: 10px; right: 10px;}
-    .custom-input-group{width: 70%;}
+    .title-text{font-size: 18px; margin-bottom: 0;}
+    .sub-text{font-size: 11px;}
+    .btn-close-custom{top: 10px; right: 10px; width: 20px; height: 20px; font-size: 13px;}
+    .custom-input-group{width: 90%; margin-bottom: 15px !important;}
     .input-group-text {font-size: 12px !important;}
     .custom-input-group .form-control{font-size: 12px !important;}
     .divider-container{width: 50%; font-size: 13px;}

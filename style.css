@@ -4850,6 +4850,8 @@ body {
         
         
         @media (max-width:767px){ 
+          .order-tracking .stepper-item.active .step-date,.order-tracking .stepper-item.inactive .step-date{font-size: 9px;}
+          .order-tracking .stepper-item.inactive .step-title,.order-tracking .stepper-item.active .step-title{font-size: 10px;}
           /* ========================= Checkout style start ======================================== */
             .checkout-section  .radio-group {
                 flex-direction: column;
@@ -5112,6 +5114,11 @@ body {
 
         @media (max-width: 576px) {
             .features-banner .feature-item { width: 100%;    justify-content: flex-start; padding-left: 10%;}
+        }
+
+        @media (max-width:360px){
+          .order-tracking .stepper-item.inactive .step-title, .order-tracking .stepper-item.active .step-title{font-size: 8px;}
+          .order-tracking .stepper-item.active .step-date, .order-tracking .stepper-item.inactive .step-date{font-size: 7px;}
         }
     
 

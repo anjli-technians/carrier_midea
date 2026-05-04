@@ -197,9 +197,9 @@
             }
 
             /* hide active item inside dropdown */
-            .dashboard_menu a.active {
+            /* .dashboard_menu a.active {
                 display: none;
-            }
+            } */
 
             section {
                 padding: 30px 0;
@@ -488,6 +488,7 @@
             border-radius: 50%;
             background-color: transparent;
         }
+        .form-control, .form-select{padding: 6px 12px;}
 
         /* ========================================== */
         @media (max-width: 768px) {
@@ -772,7 +773,10 @@
                                         <div class="form-group">
                                             <label class="form-label">Area <span>*</span></label>
                                             <select class="form-select">
-                                                <!-- <option>Select Area</option> -->
+                                                <option>Select Area</option>
+                                                <option>Area 1</option>
+                                                <option>Area 2</option>
+                                                <option>Area 3</option>
                                             </select>
                                         </div>
                                     </div>
@@ -782,7 +786,10 @@
                                         <div class="form-group">
                                             <label class="form-label">Country <span>*</span></label>
                                             <select class="form-select">
-                                                <!-- <option>India</option> -->
+                                                <option>Select Country</option>
+                                                <option>India</option>
+                                                <option>UK</option>
+                                                <option>USA</option>
                                             </select>
                                         </div>
                                     </div>
@@ -792,7 +799,10 @@
                                         <div class="form-group">
                                             <label class="form-label">State <span>*</span></label>
                                             <select class="form-select">
-                                                <!-- <option>Select State</option> -->
+                                                <option>Select State</option>
+                                                <option>Haryana</option>
+                                                <option>UP</option>
+                                                <option>Punjab</option>
                                             </select>
                                         </div>
                                     </div>
@@ -1279,6 +1289,7 @@
         }
 
         @media (max-width:767px) {
+            .form-control, .form-select{padding: 6px 12px;}
            
             .cookies_bar p {
                 font-size: 11px;

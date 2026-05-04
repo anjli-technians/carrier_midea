@@ -5001,7 +5001,7 @@ body {
           .dashboard_list ul li{padding: 10px 10px 5px;}
           .dashboard_list.open .dashboard_menu {display: block;border: 1px solid #ddd;}
           .add_more{font-size: 14px; padding: 8px 40px;} 
-          .dashboard_menu a.active {display: none;}
+          /* .dashboard_menu a.active {display: none;} */
           .features-card-section{padding-top: 0 !important;}
           .tab-section .custom-tab-content p{line-height: 19px; font-size: 11px;}
           .faq-number{font-size: 12px;}

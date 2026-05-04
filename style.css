@@ -4935,6 +4935,7 @@ body {
         @media (max-width:575px){
             .mobile-bottom-nav{display: block;}
             .mobile-bottom-nav .nav-inner{display: flex !important; overflow-x: visible !important;}
+            .mobile-bottom-nav .nav-item img{width: 25px;}
         }
     /* =================================== Footer sticky style end==================================== */
 

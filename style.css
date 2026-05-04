@@ -4656,7 +4656,7 @@ body {
        .checkout-section  .step-text-active {
             color: #2A5FB0;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 12px;margin-left: 5px;
         }
 
         .checkout-section .circle-active {

@@ -3368,6 +3368,7 @@ body {
                 text-align: center;
                 gap: 15px;
             }
+            .order-tracking .order-data .col{  flex: 0 0 33%;}
         }
 
 /* ================================================================================== */
@@ -4936,12 +4937,12 @@ body {
            .order-tracking .track-heading{font-size: 14px;}
         .order-tracking .invoice{font-size: 10px;font-weight: 400;padding: 7px 10px;}
         .order-tracking .order-data{width: 100%; text-wrap: nowrap;display: flex; align-items: center;justify-content: flex-start; margin-bottom: 10px !important; padding-top: 10px ;}
-        .order-tracking .order-data .col{margin-bottom: 15px;}
+        .order-tracking .order-data .col{margin-bottom: 15px; }
         .order-tracking .order-data-content{font-size: 12px;}
         .order-tracking .order-data-heading{font-size: 11px; font-weight: 400;}
         .order-tracking hr.text-muted {margin-top: 10px; margin-bottom: 10px !important;}
-        .order-tracking .track-heading-right{font-size: 12px;}
-        .order-tracking .tracking-card{box-shadow: unset; padding: 20px 10px; margin-bottom: 20px !important;}
+        .order-tracking .track-heading-right{font-size: 12px; }
+        .order-tracking .tracking-card{box-shadow: unset; padding: 20px 0px; margin-bottom: 20px !important;}
         .order-tracking .step-circle{width: 25px; height: 25px; font-size: 14px; font-weight: 500;}
         .stepper-item.active .step-title,.stepper-item.active .step-date,.stepper-item.inactive .step-title,.stepper-item.inactive .step-date{font-size: 10px;}
         .order-tracking .stepper-wrapper::before{top: 11px;}

@@ -1456,7 +1456,44 @@
 
     </footer>
 <!-- =================================================================================== -->
+  <!-- Sticky Footer Navigation -->
+    <div class="mobile-bottom-nav">
+        <div class="nav-inner container-fluid">
+            
+            <!-- Left Links -->
+            <a href="https://carriermidea.netlify.app/" class="nav-item">
+                <!-- <i class="bi bi-house"></i> -->
+                <img src="./images/footer-home-new.png" alt="">
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <!-- <i class="bi bi-grid"></i> -->
+                <img src="./images/footer-category-new.png" alt="">
+                <span>Categories</span>
+            </a>
+            
+            <!-- Center Mic Icon -->
+            <div class="mic-wrapper">
+                <div class="mic-btn" id="micButton">
+                    <!-- <i class="bi bi-mic-fill"></i> -->
+                    <img src="./images/footer-mic.png" alt="">
+                </div>
+            </div>
 
+            <!-- Right Links -->
+            <a href="https://carriermidea.netlify.app/order-history.html" class="nav-item">
+                <!-- <i class="bi bi-person"></i> -->
+                <img src="./images/footer-client-new.png" alt="">
+                <span>My Orders</span>
+            </a>
+            <a href="#" class="nav-item">
+                <!-- <i class="bi bi-chat-dots"></i> -->
+                <img src="./images/footer-chat-new.png" alt="">
+                <span>Chat</span>
+            </a>
+
+        </div>
+    </div>
 
 
 
@@ -1599,6 +1636,27 @@
         return text.trim() === "READ MORE" ? "READ LESS" : "READ MORE";
     });
 });
+    </script>
+
+    
+ <!-- JavaScript for Mic Animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const micBtn = document.getElementById('micButton');
+
+            // Add click event to toggle the animation
+            micBtn.addEventListener('click', function() {
+                // Toggles the 'active-mic' class which contains the CSS pulse animation
+                this.classList.toggle('active-mic');
+                
+                // You can add your actual microphone recording API logic here
+                if(this.classList.contains('active-mic')) {
+                    console.log("Microphone activated - start listening...");
+                } else {
+                    console.log("Microphone deactivated - stop listening...");
+                }
+            });
+        });
     </script>
 </body>
 </html>

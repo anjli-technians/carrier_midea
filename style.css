@@ -4838,6 +4838,107 @@ body {
         }
     /* =================================== Checkout page style end==================================== */
 
+
+    /* =================================== Footer sticky style end==================================== */
+     /* Main Container for the Bottom Nav */
+        .mobile-bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            /* background: linear-gradient(to right, #1cb5e0, #2e3192); */
+            background: linear-gradient(90deg, #27A8E0 0%, #2D3691 100%);
+
+            z-index: 1050;
+        }
+
+        .mobile-bottom-nav .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        /* Standard Nav Links */
+        .mobile-bottom-nav .nav-item {
+            text-decoration: none;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.85rem;
+            width: 20%;
+            opacity: 0.9;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .mobile-bottom-nav .nav-item span{font-size: 11px; font-weight: 500;}
+
+        .mobile-bottom-nav .nav-item:hover {
+            color: #ffffff;
+            opacity: 1;
+        }
+
+        .mobile-bottom-nav .nav-item i {
+            font-size: 1.5rem; /* Icon size */
+            margin-bottom: 2px;
+        }
+
+        /* Central Mic Button Styling */
+        .mobile-bottom-nav .mic-wrapper {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+      .mobile-bottom-nav  .mic-btn {
+            background-color: #2D3892 ; 
+            color: white;
+            border: 3px solid #ffffff ; 
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            position: absolute;
+            top: -45px; /* Elevates the button out of the bar */
+            cursor: pointer;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+            transition: all 0.3s ease;
+            z-index: 1060;
+        }
+        .mobile-bottom-nav .mic-btn img{width: 20px;}
+
+        /* Animation Class for when the Mic is Active */
+        .mobile-bottom-nav .mic-btn.active-mic {
+            animation: pulse-ring 1.5s infinite;
+            background-color: #dc3545;  
+            border-color: #ffcccc;
+        }
+
+        /* Keyframes for the pulsing ripple effect */
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(220, 53, 69, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+            }
+        }
+  .mobile-bottom-nav{display: none;}
+        @media (max-width:575px){
+            .mobile-bottom-nav{display: block;}
+            .mobile-bottom-nav .nav-inner{display: flex !important; overflow-x: visible !important;}
+            .mobile-bottom-nav .nav-item img{width: 25px;}
+        }
+    /* =================================== Footer sticky style end==================================== */
+
         /* Responsive Adjustments */
         @media (max-width: 991px) {
           
@@ -4860,7 +4961,7 @@ body {
             }
            .checkout-section  .step-text-active,
            .checkout-section  .step-text-inactive {
-                font-size: 10px;
+                font-size: 10px; padding-left: 5px;
             }
              .checkout-section .container .row{padding: 8px;}
 

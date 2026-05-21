@@ -4156,7 +4156,16 @@ body {
   font-size: 10px;
   color: rgba(255, 255, 255, 0.6);
 } */
-
+.cart-quantity{display: flex;}
+.cart-price-wrapper{display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;}
+.cart-quantity .dotted-box {border: 1.5px dashed #FF0800;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+    color: #000;margin-right: 30px;}
 /* ======================================================== */
 /* address book style start */
 .address{border: 1px solid #D0D0D0;padding: 15px;border-radius: 5px;}
@@ -4258,7 +4267,7 @@ body {
       background-color: #F6F6F6;
       padding: 6px;
       border-radius:10px; 
-      margin-bottom: 10px;
+      margin-bottom: 10px;margin-top: 35px;
     }
 
     /* Input Field Styling */
@@ -4302,17 +4311,22 @@ body {
     .main-price ,.right-content-cart {width: 100%;}
     .add_to_cart img{width: 300px;}
     .add_to_cart h3{font-size: 20px; font-weight: 600;}
-    .add_to_cart .product-price{color: #2A5FB0;
+    .add_to_cart .product-price{color: #000;
     font-size: 20px;
     font-weight: 700;}
-    .add_to_cart .cut-price{color: #8E8E8E;font-weight: 300;}
+    .add_to_cart .cut-price{color: #8E8E8E;font-weight: 300;font-size: 12px;margin-left: 0 !important;}
+    .main-price{display: flex;
+    flex-direction: column;
+    align-items: flex-start;}
     .add_to_cart .tax{color: #000;font-size: 10px;}
-    .add_to_cart .saved_amount{color: #2A5FB0;
+    .add_to_cart .saved_amount{color: #000;
     font-size: 11px;
-    font-family: "poppins", sans-serif;}
+    font-family: "poppins", sans-serif;display: flex;
+    flex-direction: column;font-weight: 600;margin-top: 10px;}
+    .add_to_cart .saved_amount span{color: #2A5FB0;}
 .delivery_instruction{border: 1px solid #DDDDDD;
     border-radius: 10px;
-    padding: 20px 10px;}
+    padding: 20px 10px;margin-top: 10px;}
     .delivery_instruction h4{font-size: 15px;font-weight: 600;margin-left: 7px;}
     .delivery_instruction .note{font-size: 10px;}
     .delivery_instruction input{background: #F6F6F6;
@@ -4953,6 +4967,8 @@ body {
         
         
         @media (max-width:767px){ 
+          .cart-quantity .dotted-box{display: none;}
+          .cart-price-wrapper{flex-direction: row-reverse;}
           .deals-header.faq .view_all{display: none;}
           .order-tracking .stepper-item.active .step-date,.order-tracking .stepper-item.inactive .step-date{font-size: 9px;}
           .order-tracking .stepper-item.inactive .step-title,.order-tracking .stepper-item.active .step-title{font-size: 10px;}

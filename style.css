@@ -4198,7 +4198,7 @@ body {
 /* order history style end */
 .container.swiper-section{padding-top: 20px; padding-bottom: 20px;}
 .tab-section{padding-top: 30px ;}
-.dal-faq{width: 100%;}
+.faq{width: 100%;}
 .review-dal{width: 100%;}
 .quantity {
   display: flex;
@@ -4952,6 +4952,7 @@ body {
         
         
         @media (max-width:767px){ 
+          .deals-header.faq .view_all{display: none;}
           .order-tracking .stepper-item.active .step-date,.order-tracking .stepper-item.inactive .step-date{font-size: 9px;}
           .order-tracking .stepper-item.inactive .step-title,.order-tracking .stepper-item.active .step-title{font-size: 10px;}
           /* ========================= Checkout style start ======================================== */

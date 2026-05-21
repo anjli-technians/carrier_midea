@@ -13,25 +13,21 @@
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <style>
-    /* Full screen dark background */
-    body {
-      background-color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-    }
-
+  <style> 
     /* Main Container Card */
+    .login_page {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;}
     .login-card {
       width: 100%;
-      max-width: 500px;
+      max-width: 420px;
       padding: 3rem 2rem;
       border-radius: 1rem;
       position: relative;
-      border: 1px solid #D5D5D5;
+      border: 1px solid #D5D5D5; 
     }
 
     /* Red Close Button */
@@ -122,7 +118,7 @@
       display: flex;
       justify-content: center;
       gap: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 20px;margin-top: 15px;
     }
 
     .social-btn {
@@ -189,50 +185,52 @@
 </head>
 <body>
 
-  <!-- Main White Card -->
-  <div class="bg-white login-card text-center shadow-lg">
-    
-    <!-- Close Icon -->
-    <button class="btn-close-custom" aria-label="Close">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
+  <div class="login_page">
+    <!-- Main White Card -->
+    <div class="bg-white login-card text-center shadow-lg">
+      
+      <!-- Close Icon -->
+      <button class="btn-close-custom" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
 
-    <!-- Headings -->
-    <h2 class="title-text">Let's Get Started</h2>
-    <p class="sub-text">Enter Your Mobile Number</p>
+      <!-- Headings -->
+      <h2 class="title-text">Let's Get Started</h2>
+      <p class="sub-text">Enter Your Mobile Number</p>
 
-    <!-- Phone Input -->
-    <div class="input-group custom-input-group mb-4">
-      <span class="input-group-text" id="country-code">+91</span>
-      <input type="tel" class="form-control" aria-label="Phone number" aria-describedby="country-code">
+      <!-- Phone Input -->
+      <div class="input-group custom-input-group mb-4">
+        <span class="input-group-text" id="country-code">+91</span>
+        <input type="tel" class="form-control" aria-label="Phone number" aria-describedby="country-code">
+      </div>
+
+      <!-- OR Divider -->
+      <div class="divider-container">OR</div>
+
+      <!-- Social Login Icons -->
+      <div class="social-icons-wrapper">
+        <a href="#" class="social-btn" aria-label="Login with Google">
+          <i class="fa-brands fa-google google-icon"></i>
+        </a>
+        <a href="#" class="social-btn" aria-label="Login with Apple">
+          <i class="fa-brands fa-apple"></i>
+        </a>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check d-flex justify-content-center align-items-center gap-2 mb-3">
+        <input class="form-check-input mt-0" type="checkbox" value="" id="updatesCheck" checked>
+        <label class="form-check-label checkbox-text" for="updatesCheck">
+          Notify Me For Any Updates & Offers
+        </label>
+      </div>
+
+      <!-- Terms and Conditions Text -->
+      <p class="terms-text">
+        I accept that I have read & understood Carrier Midea's<br>Privacy Policy and T&Cs.
+      </p>
+
     </div>
-
-    <!-- OR Divider -->
-    <div class="divider-container">OR</div>
-
-    <!-- Social Login Icons -->
-    <div class="social-icons-wrapper">
-      <a href="#" class="social-btn" aria-label="Login with Google">
-        <i class="fa-brands fa-google google-icon"></i>
-      </a>
-      <a href="#" class="social-btn" aria-label="Login with Apple">
-        <i class="fa-brands fa-apple"></i>
-      </a>
-    </div>
-
-    <!-- Checkbox -->
-    <div class="form-check d-flex justify-content-center align-items-center gap-2 mb-3">
-      <input class="form-check-input mt-0" type="checkbox" value="" id="updatesCheck" checked>
-      <label class="form-check-label checkbox-text" for="updatesCheck">
-        Notify Me For Any Updates & Offers
-      </label>
-    </div>
-
-    <!-- Terms and Conditions Text -->
-    <p class="terms-text">
-      I accept that I have read & understood Carrier Midea's<br>Privacy Policy and T&Cs.
-    </p>
-
   </div>
 
   <!-- Bootstrap JS (Optional, for interactive components if added later) -->

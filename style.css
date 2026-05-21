@@ -2482,7 +2482,7 @@ body {
   .explore_by_room_size .video-section img,
   .explore_by_room_size .video-section video {
     width: 100%;
-    border-radius: 14px;
+    border-radius: 0px;
   }
 
   /* swiper cards */

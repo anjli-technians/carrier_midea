@@ -931,6 +931,22 @@ body {
   font-weight: 400;
   color: #000;
 }
+.sticky_sku{position: sticky;
+    bottom: 56px;
+    background: #2A5FB0;
+    border-radius: 14px 14px 0 0;
+    color: #fff;display: flex;
+    justify-content: space-between;align-items: center;padding: 12px;}
+.sticky_sku h1{font-size: 12px;
+    font-weight: 300;margin-bottom: 0;}
+.sticky_sku .price{font-size: 15px;
+    font-weight: 700; }
+.sticky_sku a{color: #fff;
+    text-decoration: none;
+    font-size: 13px;display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;}
 .explore_category .nav-item .nav-link.active {
   border-bottom: 0px;
   font-size: 15px;
@@ -4886,7 +4902,7 @@ body {
             opacity: 0.9;
             transition: opacity 0.2s ease-in-out;
         }
-        .mobile-bottom-nav .nav-item span{font-size: 11px; font-weight: 500;}
+        .mobile-bottom-nav .nav-item span{font-size: 11px; font-weight: 400;}
 
         .mobile-bottom-nav .nav-item:hover {
             color: #ffffff;
@@ -4909,16 +4925,16 @@ body {
       .mobile-bottom-nav  .mic-btn {
             background-color: #2D3892 ; 
             color: white;
-            border: 3px solid #ffffff ; 
+            border: 2px solid #ffffff ; 
             border-radius: 50%;
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 2rem;
             position: absolute;
-            top: -45px; /* Elevates the button out of the bar */
+            top: -35px; /* Elevates the button out of the bar */
             cursor: pointer;
             /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
             transition: all 0.3s ease;
@@ -4950,7 +4966,7 @@ body {
         @media (max-width:575px){
             .mobile-bottom-nav{display: block;}
             .mobile-bottom-nav .nav-inner{display: flex !important; overflow-x: visible !important;}
-            .mobile-bottom-nav .nav-item img{width: 25px;}
+            .mobile-bottom-nav .nav-item img{width: 20px;}
         }
     /* =================================== Footer sticky style end==================================== */
 

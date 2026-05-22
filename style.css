@@ -4940,7 +4940,7 @@ body {
             transition: all 0.3s ease;
             z-index: 1060;
         }
-        .mobile-bottom-nav .mic-btn img{width: 20px;}
+        .mobile-bottom-nav .mic-btn img{width: 17px;}
 
         /* Animation Class for when the Mic is Active */
         .mobile-bottom-nav .mic-btn.active-mic {
